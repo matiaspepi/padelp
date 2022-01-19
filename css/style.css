@@ -1,0 +1,353 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+}
+ /*header*/
+header nav ul li a {
+    text-decoration: none;
+    color: #E6E18F;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+.carrito,.carrito-p {
+    position: relative;
+    left: 98%;
+    bottom: 495px;
+
+    color: #E6E18F;
+}
+.imagen-central { 
+    width: 100%;
+    height: 400px;
+}
+.imagen-logo:hover{
+    position: relative;
+    right: 2px;
+    bottom: 35px;
+    animation: changeColor 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes changeColor { 
+    0% { width: 90px;
+        border-radius: 90%;
+        background-color: black;} 
+    15%{width: 90px;
+        background-color:  rgba(158, 160, 148, 0.603);
+        border-radius: 90%;
+    }
+    30% {width: 90px;
+        background-color: grey;
+        border-radius: 90%;
+    }
+    50% {border-radius: 90%;
+        background-color: #ffff;
+        width: 90px;
+    }
+    80%{ border-radius: 90%;
+        background-color: rgb(61, 61, 57);
+        width: 90px;
+    }
+    100% {border-radius: 90%;
+        background-color: #080808;
+        width: 90px;
+    }
+    
+}
+.encabezado{ 
+    border: 2px solid #E6E18F ;
+    margin: 0% auto;
+    text-decoration: none;
+    display: flex;
+    width: 60%;
+    height: 30px;
+    justify-content: space-around;
+    list-style: none;}
+
+/* fin header*/
+
+/*main*/
+ .productos-dest, .productos {
+     border: 1px solid #E6E18F;
+     color:black;
+     background-color: #E6E18F;
+     font-style: normal;
+     display: flex;
+     justify-content: center;
+     margin-left: 630px;
+     margin-right: 630px;
+     margin-top: 2%;
+     margin-bottom: 4%;
+ }
+ 
+ .imagenes-uno{
+     margin-top: 7rem;
+    color: #E6E18F; 
+    display: grid;
+    grid-template-columns: 33rem 38rem 20rem;
+    grid-template-rows: 25fr ;
+    width: 40px;
+    gap: 20px;
+}
+.box:hover {
+    transform: scale(1.5);
+}
+.item-uno { 
+    padding: 0% 20%;
+    margin: 0% 10%;
+    transition: all 2s;
+}
+    .instructores-parrrafo {  font-family: 'Dancing Script', cursive;
+        font-family: 'Staatliches', cursive;
+        width: 60%;
+        margin-bottom: 5%;
+
+    }
+.instructores-contenido{ display: flex;
+   justify-content: space-around;
+    color: #E6E18F;
+    width: 100%;
+    margin: 0% 0%;
+}
+.tipos-cancha {
+    display: flex;
+    justify-content: center;
+    color: #E6E18F;
+}
+.contenedor-canchas{
+    display: grid;
+    grid-template-columns: 30fr 20fr;
+    grid-template-rows: 30fr 20fr;
+    width: 100%;
+    margin: 4% 0%;
+}
+.imagen-uno-cancha,.imagen-tres-cancha {
+    position: relative;
+    left: 12%;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 15%;
+}
+.imagen-dos-cancha,.imagen-cuatro-cancha{
+    position: relative;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 15%;
+}
+
+.conocenos-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    color: #E6E18F;
+   margin: 20px 20px 30px 0px;
+}
+.parrafo-conocenos { padding: 2%;
+    font-family: 'Dancing Script', cursive;
+        font-family: 'Staatliches', cursive;
+        font-size: 20px;
+}
+ /*fin main*/
+
+ /*footer*/
+ footer{
+     background-color: #E6E18F;
+    }
+    .redes-sociales{
+        color:black ;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Staatliches', cursive;
+    }
+    .contenedor-redes {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        list-style: none;
+        
+    }
+
+
+.copyright { background-color: black;
+    color: #E6E18F;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Staatliches', cursive;
+}
+.seccion-contacto {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.titulo-pagos{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Staatliches', cursive;
+    color: black;
+    display: flex;
+    justify-content: right;
+}
+.imagen-logo {
+    color: #E6E18F;
+    width: 10%;
+    height: 10%;
+}
+.contenedor-pagos {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Staatliches', cursive;
+    display: flex;       
+    justify-content: right;
+    list-style: none;
+}
+.contenedor-google {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 40%;
+    position: relative;
+    bottom: 10px;
+}
+.direccion-conteiner {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+}
+
+/*fin footer*/
+
+@media only screen and (max-width: 480px) {
+header nav ul li {
+    border: 1px solid #E6E18F
+}
+ .encabezado{
+     width: 60%;   
+         margin: auto;
+          display: flex;
+          flex-direction: column;
+          border: none;
+          height: 10%;
+          
+ }
+.imagenes-uno {
+   display: grid;
+   grid-template-columns: repeat(2, 10rem);
+   gap: 15px;
+   width: 60%;
+}
+body {
+    width: 100%;
+}
+footer {
+    width: 100%;
+}
+.productos-dest {
+    position: relative;
+    right: 32rem;
+    width: 52%;
+}
+.imagen-central {
+    width: 100%;
+    height: 50%;
+}
+.carrito {
+position: relative;
+right: 15px;
+top: -540px;
+}
+.contenedor-google {
+    width: 30%;
+    height: 20%;
+}
+.imagen-logo {
+    width: 1px;
+    position: relative;
+   bottom: 10rem;
+} 
+#contactoMati {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;}
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+    body {
+        width: 105%;
+    }
+    .encabezado {
+        width: 70%;
+    }
+    .imagenes-uno {
+        display: grid;
+        grid-template-columns: repeat(3, 10rem);
+    }
+    .productos-dest {
+        position: relative;
+        right: 25rem;
+        width: 30%;
+    }
+    .contenedor-google {
+        width: 30%;
+        height: 20%;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+   
+    body {
+        width: 100%;
+    }
+    .encabezado {
+        width: 80%;
+    }
+    .imagenes-uno {
+        display: grid;
+        grid-template-columns: repeat(3,12rem);
+    }
+    .productos-dest {
+        width: 30%;
+        position: relative;
+        right: 22rem;
+    }
+
+}
+@media only screen and (min-width: 801px) and (max-width: 1040px) {
+    body {
+    width: 100%;
+    }  
+    .encabezado { width: 70%;}
+    .imagen-central {
+        width: 100%;
+    }
+    .imagenes-uno {
+        display: grid;
+        grid-template-columns: repeat(3, 15rem);
+    }
+    .productos-dest {
+        position: relative;
+        right: 22rem;
+        width: 30%;
+    }
+}
