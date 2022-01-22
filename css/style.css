@@ -6,72 +6,12 @@
 body {
     background-color: rgb(10, 10, 10);
 }
- /*header*/
-header nav ul li a {
-    text-decoration: none;
-    color: #E6E18F;
-    display: flex;
-    justify-content: center;
-    padding: 7px;
-}
-.carrito,.carrito-p {
-    position: relative;
-    left: 98%;
-    bottom: 495px;
 
-    color: #E6E18F;
-}
-.imagen-central { 
-    width: 100%;
-    height: 400px;
-}
-.imagen-logo:hover{
-    position: relative;
-    right: 2px;
-    bottom: 35px;
-    animation: changeColor 3s;
-    animation-iteration-count: infinite;
-}
-@keyframes changeColor { 
-    0% { width: 90px;
-        border-radius: 90%;
-        background-color: black;} 
-    15%{width: 90px;
-        background-color:  rgba(158, 160, 148, 0.603);
-        border-radius: 90%;
-    }
-    30% {width: 90px;
-        background-color: grey;
-        border-radius: 90%;
-    }
-    50% {border-radius: 90%;
-        background-color: #ffff;
-        width: 90px;
-    }
-    80%{ border-radius: 90%;
-        background-color: rgb(61, 61, 57);
-        width: 90px;
-    }
-    100% {border-radius: 90%;
-        background-color: #080808;
-        width: 90px;
-    }
-    
-}
-.encabezado{ 
-    border: 2px solid #E6E18F ;
-    margin: 0% auto;
-    text-decoration: none;
-    display: flex;
-    width: 60%;
-    height: 30px;
-    justify-content: space-around;
-    list-style: none;}
 
 /* fin header*/
 
 /*main*/
- .productos-dest, .productos {
+ /*.productos-dest, .productos {
      border: 1px solid #E6E18F;
      color:black;
      background-color: #E6E18F;
@@ -92,6 +32,24 @@ header nav ul li a {
     grid-template-rows: 25fr ;
     width: 40px;
     gap: 20px;
+}*/
+.productos-dest {text-align: center;
+    width: 25%;
+    font-size: 30px;
+     color: black;
+    background-color: #E6E18F;
+    margin: 80px;
+    border-radius: 10px;
+}
+.container-productos{
+   padding-left: 80px;
+}
+.container {
+    margin-left: 196px;
+    margin-bottom: 5%;
+}
+p,h2 { font-size: 20px;
+    color: #E6E18F;
 }
 .box:hover {
     transform: scale(1.5);
@@ -156,86 +114,63 @@ header nav ul li a {
 }
  /*fin main*/
 
- /*footer*/
+ 
  footer{
      background-color: #E6E18F;
     }
-    .redes-sociales{
-        color:black ;
+    .container-registro {
+        border-left: 4px solid black;
+        width: 40rem;
+        height: 16%;
+    }
+    .container-secciones {
+        list-style: none;
+        font-size: 22px;
+    }
+    .container-redes{
+        list-style: none;
+        width: 8rem;
+        margin: 0%;
+        padding-left: 0%;
+    }
+    .redes-uno {
+        position: relative;
+        bottom: 150px;
+        height: 0px;
+    }
+   .img-redes {
+       padding: 20px 20px 0px 0px ;
+   }
+   .container-pagos {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       position: relative;
+       right: 180px;
+       bottom: 150px;
+       height: 0px;
+   }
+   .img-pagos {
+       padding: 20px 20px 0px 0px;
+   }
+   .pagos-seccion {
+       list-style: none;
+       width: 20px;
+       padding-left: 0px;
+       position: relative;
+       right: 80px;
+   }
+    .secciones-footer {
+        text-decoration:none ;
+        color: black;
+    }
+    .copyright { background-color: black;
+        color: #E6E18F;
         font-family: 'Dancing Script', cursive;
         font-family: 'Staatliches', cursive;
-    }
-    .contenedor-redes {
         display: flex;
-        justify-content: space-between;
-        width: 10%;
-        list-style: none;
-        
+        justify-content: center;
     }
-
-
-.copyright { background-color: black;
-    color: #E6E18F;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Staatliches', cursive;
-    display: flex;
-    justify-content: center;
-}
-
-
-.info {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Staatliches', cursive;
-}
-.seccion-contacto {
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Staatliches', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
-.titulo-pagos{
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Staatliches', cursive;
-    color: black;
-    display: flex;
-    justify-content: right;
-}
-.imagen-logo {
-    color: #E6E18F;
-    width: 10%;
-    height: 10%;
-}
-.contenedor-pagos {
-    color: black;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Staatliches', cursive;
-    display: flex;       
-    justify-content: right;
-    list-style: none;
-}
-.contenedor-google {
-    width: 20%;
-    height: 20%;
-    position: relative;
-    left: 40%;
-    position: relative;
-    bottom: 10px;
-}
-.direccion-conteiner {
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Staatliches', cursive;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 10px;
-}
-
-/*fin footer*/
 
 @media only screen and (max-width: 480px) {
 header nav ul li {
