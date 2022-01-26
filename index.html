@@ -13,7 +13,7 @@
     <link href = "https: //fonts.googleapis.com/css2? family = Dancing + Script: wght @ 700 &family = Staatliches & display = swap "rel =" stylesheet ">
 </head>
 <body>
-
+<!--Header-->
 <header> 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E6E18F;">
         <div class="container-fluid">
@@ -68,35 +68,80 @@
           </div>
         </section>
 </header>
- 
-    <div class="d-flex justify-content-center">
-         <h1 class="productos-dest p-2">Productos Destacados</h1>
-    </div>
-<section class="container-productos-dest">
-<div class="row">
-        <div class="col sm-3"><img src="imagenes/productos/paleta1.png" alt="padelstraviv">
-        <p>Padel Straviv <br> TRiton Soft 21</p>
-        <h2>61.000$</h2></div>
-        <div class="col sm-3"><img src="imagenes/productos/zapatilla-1.png" alt="zapatilla head moon">
-        <p>Zapatilla Azul <br> Head Moon Alaska II </p>
-        <h2>6.900 $</h2></div>
-        <div class="col sm-6"><img src="imagenes/productos/pelota1.png" alt="pelota bullpadel">
-        <p>Tubo de Padel X3 <br> Bull Padel Gold</p>
-        <h2>2.700$</h2></div>
-    </div>
-    <div class="row">    
-        <div class="col sm-3"><img src="imagenes/productos/bolso1.jpg"alt="bolso Vairo">
-        <p>Bolso Vairo <br> UltraLight celeste</p>
-        <h2>6.100$</h2></div>
-        <div class="col sm-3"><img src="imagenes/productos/paleta2.png" alt="Paleta Babolat Storm ">
-        <p>Paleta Babolat <br> Storm</p>
-        <h2>21.800$</h2></div>
-        <div class="col sm-6"><img src="imagenes/productos/cubregrip1.png" alt="cubregrip rosa">
-        <p>Cubre Grip Rosa</p>
-       <h2>530$</h2></div>
-    </div>
+
+
+
+ <!--Fin Header-->
+ <!--comienzo del Main-->
+ <section class="seccion-main">
+  <div class="d-flex justify-content-center">
+    <h1 class="productos-dest p-2">Productos Destacados</h1>
 </div>
+ <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+  <div class="col container-img">
+    <div class="box box-uno card" style="background-color: #E6E18F;">
+      <img src="./imagenes/productos/paleta1.jpg" class="img-fluid card-img-top" alt="padelstraviv">
+      <div class="card-body">
+        <h5 class="card-title text-black">Padel Straviv TRiton Soft 21</h5>
+        <p class="card-text text-black">61.000$</p>
+      </div>
+    </div>
+  </div>
+  <div class="col container-img">
+    <div class="box box-uno card" style="background-color: #E6E18F;">
+      <img src="./imagenes/productos/zapatilla2.png" class="img-fluid card-img-top" alt="zapatilla head moon">
+      <div class="card-body">
+        <h5 class="card-title text-black">Zapatilla Azul Head Moon</h5>
+        <p class="card-text text-black">6.900$</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col container-img">
+    <div class="box box-uno card" style="background-color: #E6E18F;">
+      <img src="./imagenes/productos/pelota1.jpg" class="img-fluid card-img-top" alt="pelota bullpadel">
+      <div class="card-body">
+        <h5 class="card-title text-black">Tubo de Padel X3 Bull</h5>
+        <p class="card-text text-black">2.700$</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+  <div class="col container-img">
+    <div class="box box-uno card" style="background-color: #E6E18F;">
+      <img src="./imagenes/productos/bolso1.jpg" class="img-fluid card-img-top" alt="Bolso Vairo">
+      <div class="card-body">
+        <h5 class="card-title text-black">Bolso Vairo <br> UltraLight Azul </h5>
+        <p class="card-text text-black">6.100$</p>
+      </div>
+    </div>
+  </div>
+  <div class="col container-img">
+    <div class="box box-uno card" style="background-color: #E6E18F;">
+      <img src="./imagenes/productos/paleta2.jpg" class="img-fluid card-img-top" alt="Paleta Babolat">
+      <div class="card-body">
+        <h5 class="card-title text-black">Paleta Babolat Storm</h5>
+        <p class="card-text text-black">21.000$</p>
+      </div>
+    </div>
+  </div>
+  <div class="col container-img">
+    <div class="box box-uno card" style="background-color: #E6E18F;">
+      <img src="./imagenes/productos/cubregrip1.png" class="img-fluid card-img-top" alt="Cubre Grip Rosa">
+      <div class="card-body">
+        <h5 class="card-title text-black">Cubre Grip <br> Rosa</h5>
+        <p class="card-text text-black">530$</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
+
+</section>
+<!--Fin de Main-->
+<!--Comienzo del Footer-->
 <footer>
 
     <div class="d-flex justify-content-between">
@@ -199,8 +244,8 @@
             <li class="copyright"> 
                 Copyright - Company Name: Matias Alejandro Pepi
       </section>
-    
 </footer>
+<!--Fin de Footer-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
