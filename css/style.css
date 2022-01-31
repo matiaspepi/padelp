@@ -29,6 +29,10 @@ p,h2 { font-size: 20px;
     margin: 0% 10%;
     transition: all 2s;
 }
+.titulo:hover {text-shadow:0px 5px 10px #050505;
+}
+
+
 /* instructores*/
 .imagen-instructores {
     position: relative;
@@ -121,15 +125,28 @@ p,h2 { font-size: 20px;
     position: relative;
     top: 25px;
 }
+.container-conocenos{
+    margin-bottom: 80px;
+}
 /*Fin Conocenos*/
  /*footer*/
  footer{
      background-color: #E6E18F;
     }
+    .seccion-registro {
+        height: 77%;
+        display: flex;
+       justify-content: center;
+       width: 100%;
+    }
     .container-registro {
-        border-left: 4px solid black;
-        width: 40rem;
-        height: 16%;
+       background-color: #E6E18F;
+       margin-top: 5%;
+       padding: 20px;
+    }
+    .boton-registro {
+        margin-bottom: 10px;
+        width: 15%;
     }
     .container-secciones {
         list-style: none;
@@ -138,25 +155,15 @@ p,h2 { font-size: 20px;
     .container-redes{
         list-style: none;
         width: 8rem;
-        margin: 0%;
         padding-left: 0%;
     }
-    .redes-uno {
-        position: relative;
-        bottom: 150px;
-        height: 0px;
-    }
    .img-redes {
-       padding: 20px 20px 0px 0px ;
+       padding: 20px 20px 0px 50px ;
    }
    .container-pagos {
        display: flex;
        align-items: center;
        flex-direction: column;
-       position: relative;
-       right: 180px;
-       bottom: 150px;
-       height: 0px;
    }
    .img-pagos {
        padding: 20px 20px 0px 0px;
@@ -166,18 +173,20 @@ p,h2 { font-size: 20px;
        width: 20px;
        padding-left: 0px;
        position: relative;
-       right: 80px;
+       right: 20px;
    }
-    .secciones-footer {
-        text-decoration:none ;
-        color: black;
-    }
+   .container-footer {
+       margin-bottom: 50px;
+       margin-top: 60px;
+   }
     .copyright { background-color: black;
         color: #E6E18F;
-        font-family: 'Dancing Script', cursive;
-        font-family: 'Staatliches', cursive;
         display: flex;
         justify-content: center;
+    }
+    .github {
+        text-decoration: none;
+        color: #E6E18F;
     }
     /*fin footer*/
 
@@ -213,17 +222,12 @@ left: 2rem;
 footer {
     width: 490px;
     }
-.redes-uno {
-    width: 40%;
-    position: relative;
-    bottom: 30rem;
-}
+
 .container-pagos {
     margin-left: 80px;
 }
-.container-registro {
-    width: 200px;
-}
+
+
 @media only screen and (min-width: 321px) and (max-width: 480px) {
 
    .productos-dest{ 
@@ -267,15 +271,15 @@ footer {
        position: relative;
        right: 100px;
    }
+   .seccion-registro {
+       width: 10rem;
+       height: 30%;
+   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 600px) {
-body {
-    width: 100%;
-}
-header {
-    width: 100%;
-}
+
+
 .productos-dest {
     margin-right: 8rem;
 }
@@ -303,14 +307,8 @@ header {
 .seccion-canchas{
     width: 15rem ;
 }
-footer {
-    width: 100%;
-}
-.container-pagos {
-   position: relative;
-   right: 15rem;
-   bottom: 15rem;
-}
+
+
 .imagen-inst{
     width: 30rem;
     height: 20rem;
@@ -324,12 +322,7 @@ footer {
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {
 
-    body {
-        width: 100%;
-    }
-    header {
-        width: 100%;
-    }
+    
     .productos-dest {
         margin-right: 8rem;
     }
@@ -358,29 +351,6 @@ footer {
         position: relative;
         right: 70px;
     }
-    footer {
-        width: 100%;
-    }
-    .parrafo-redes {
-        position: relative;
-        top: 17rem;
-    
-    }
-    .container-redes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 18rem;
-    }
- .container-registro{
-     width: 40%;
- }
- .container-pagos {
-     width: 30%;
-     position: relative;
-     left: 130px;
- }
  
     .imagen-inst{
         width: 30rem;
@@ -392,12 +362,7 @@ footer {
     }
 }
 @media only screen and (min-width: 801px) and (max-width:1200px) {
-    body {
-        width:100%;
-    }
-    header {
-        width: 100%;
-    }
+    
     .productos-dest {
         margin-right: 12rem;
         width: 40%;
@@ -424,25 +389,7 @@ footer {
         right: 70px;
     }
 
-    footer {
-        width: 100%;
-    }
-    .container-registro {
-        width: 50%;
-    }
-
-    .parrafo-redes {
-        position: relative;
-        top: 17rem;
-    
-    }
-    .container-redes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 18rem;
-    }
+   
     .imagen-inst{
         width: 30rem;
         height: 20rem;
@@ -454,24 +401,18 @@ footer {
 
 }
 @media only screen and (min-width:1200px) and (max-width:1800px) {
-    body {
-        width: 100%;
-    }
-    header {
-        width: 100%;
-    }
-    footer  {
-        width: 100%;
-    }
-    .container-registro{
-        width: 40%;
-    }
+  
     .productos-dest {
         width: 30%;
     }
     .seccion-main{
         width: 100%;
         margin: 0px;
+    }
+    .container-img {
+        margin-bottom: 50px;
+        position: relative;
+        left: 40px;
     }
     .seccion-main-productos{
         width: 80rem;
@@ -485,15 +426,6 @@ footer {
     .seccion-canchas {
         width: 120rem;
     }
-    .container-redes {
-        position: relative;
-        top: 20rem;
-        margin-left: 5px;
-    }
-    .parrafo-redes {
-        position: relative;
-        top: 20rem;
-    }
     .imagen-inst {
         position: relative;
         right: 70px;
@@ -504,5 +436,8 @@ footer {
         width: 40rem;
         position: relative;
         left: 1px;
+    }
+    .container-registro {
+        width: 40%;
     }
 }
