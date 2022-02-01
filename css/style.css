@@ -1,443 +1,483 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-    background-color: rgb(10, 10, 10);
-}
- /* index main*/
-.productos-dest {text-align: center;
-    margin: 50px 10rem 50px 50px;
-    width: 25%;
-    font-size: 30px;
-     color: black;
-    background-color: #E6E18F;
-
-    border-radius: 10px;
-}
-.container {
-    margin-left: 196px;
-    margin-bottom: 5%;
-}
-p,h2 { font-size: 20px;
-    color: #E6E18F;
+  background-color: black;
 }
 
-.item-uno { 
-    padding: 0% 20%;
-    margin: 0% 10%;
-    transition: all 2s;
-}
-.titulo:hover {text-shadow:0px 5px 10px #050505;
-}
-
-
-/* instructores*/
-.imagen-instructores {
-    position: relative;
-    right: 90px;
-    margin-bottom: 80px;
-}
-.parrafo-instructores {
-    background-color: #E6E18F;
-    color: black;
-    height: 85%;
-    border-radius: 1rem;
-    position: relative;
-    top: 15px;
-}
-.instructores-dest {
-    width: 15rem;
-} /*fin instructores*/
-/*Canchas*/
-
-.row {
-    margin-bottom: 150px;
-}
-.tipos-cancha { 
-    display: flex;
-    justify-content: center;
-    color: black;
-    position: relative;
-    bottom: 40px;
-    left: 29rem;
-    background-color: #E6E18F;
-    height: 25px;
-    width: 40%;
-    border-radius: 1rem;
-
-}
-.cancha-uno-dos {
-    margin-bottom: 50px;
-    padding-right: 30px;
-    position: relative;
-    right: 40px;
-    }
-.cancha-tres-cuatro {
-    margin-top: 20px;
-    padding-right: 50px;
-    position: relative;
-    right: 40px;
-}
-.seccion-tablas {
-    margin-bottom: 30px;
-    position: relative;
-    bottom: 50px;
-}
-/*fin Canchas*/
-/* Productos y Productos destacados*/
-.box:hover {
-    transform: scale(1.4);
-}
-.box-uno {
-    transition: all 2s;
-}
-.seccion-main {
-    padding-left: 30px;
-    width: 75rem;
-    height: 55rem;
-    border: 4px solid #E6E18F;
-    margin: 15px 10px 15px 9rem ;
-}
-.seccion-main-productos {
-    height: 75rem;
-    width: max-content;
-    margin-left: 14rem;
-}
-.container-img, .card-img-top, .container-img-productos{
-    height: 150px;
-    width: 14rem;
-    margin-right: 80px;
-}
-/*Fin Productos y Productos Destacados*/
-/*Conocenos*/
-
-.imagen-conocenos {
-    position: relative;
-    right: 120px;
-    width: 500px;
-    margin-bottom: 80px;
-    margin-left: 160px;
-}
-.parrafo-conocenos {
-    height: 80%;
-    position: relative;
-    top: 25px;
-}
-.container-conocenos{
-    margin-bottom: 80px;
-}
-/*Fin Conocenos*/
- /*footer*/
- footer{
-     background-color: #E6E18F;
-    }
-    .seccion-registro {
-        height: 77%;
-        display: flex;
-       justify-content: center;
-       width: 100%;
-    }
-    .container-registro {
-       background-color: #E6E18F;
-       margin-top: 5%;
-       padding: 20px;
-    }
-    .boton-registro {
-        margin-bottom: 10px;
-        width: 15%;
-    }
-    .container-secciones {
-        list-style: none;
-        font-size: 22px;
-    }
-    .container-redes{
-        list-style: none;
-        width: 8rem;
-        padding-left: 0%;
-    }
-   .img-redes {
-       padding: 20px 20px 0px 50px ;
-   }
-   .container-pagos {
-       display: flex;
-       align-items: center;
-       flex-direction: column;
-   }
-   .img-pagos {
-       padding: 20px 20px 0px 0px;
-   }
-   .pagos-seccion {
-       list-style: none;
-       width: 20px;
-       padding-left: 0px;
-       position: relative;
-       right: 20px;
-   }
-   .container-footer {
-       margin-bottom: 50px;
-       margin-top: 60px;
-   }
-    .copyright { background-color: black;
-        color: #E6E18F;
-        display: flex;
-        justify-content: center;
-    }
-    .github {
-        text-decoration: none;
-        color: #E6E18F;
-    }
-    /*fin footer*/
-
-@media only screen and (min-width: 320px) { 
-
-body { 
-    width: 460px;
-}
- header {
-     width: 490px;
- }
 .productos-dest {
-    width: 60%;
-position: relative;
-left: 2rem;
+  margin: 50px 10rem 50px 50px;
+  width: 25%;
+  font-size: 30px;
+  color: black;
+  background-color: #E6E18F;
 }
 
-.imagen-inst {
-    width: 300px;
-    height: 300px;
-}
-.video-inst {
-    width: 500px;
-    position: relative;
-    right: 10rem;
-}
-.parrafo-instructores {
-    width: 50rem;
-    position: relative;
-    right: 11rem;
-}
-}
-footer {
-    width: 490px;
-    }
-
-.container-pagos {
-    margin-left: 80px;
+.titulo:hover {
+  text-shadow: 0px 5px 10px #050505;
 }
 
+p, h2 {
+  font-size: 20px;
+  color: #E6E18F;
+}
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+.box:hover {
+  transform: scale(1.4);
+}
 
-   .productos-dest{ 
-       margin-left: 3rem;
-   }
+.box-uno {
+  transition: all 2s;
+}
+
 .seccion-main {
+  padding-left: 30px;
+  width: 75rem;
+  height: 55rem;
+  border: 4px solid #E6E18F;
+  margin: 15px 10px 15px 9rem;
+}
+
+.seccion-main-productos {
+  height: 75rem;
+  width: max-content;
+  margin-left: 14rem;
+}
+
+.container-img, .card-img-top, .container-img-productos {
+  height: 150px;
+  width: 14rem;
+  margin-right: 80px;
+}
+
+@media only screen and (min-width: 320px) {
+  .productos-dest {
+    width: 60%;
+    position: relative;
+    left: 2rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .productos-dest {
+    margin-left: 3rem;
+  }
+
+  .seccion-main {
     height: 165rem;
     width: 30rem;
     margin-left: 0px;
-}
-.container-img{
+  }
+
+  .container-img {
     margin-bottom: 160px;
-}
-.seccion-main-productos{
+  }
+
+  .seccion-main-productos {
     width: 30rem;
     margin-left: 5px;
     height: 280rem;
-}
-.container-img-productos{
+  }
+
+  .container-img-productos {
     margin-bottom: 150px;
+  }
 }
-   .imagen-inst {
-       width: 30rem;
-       height: 20rem;
-       position: relative;
-       right: 100px;
-   }
-   .container-conocenos{
-       display: flex;
-       flex-wrap: wrap;
-   }
-   .imagen-conocenos {
-       width: min-content;
-       height: min-content;
-   }
-   .seccion-canchas {
-       width: 10rem;
-   }
-   .container-canchas {
-       width: 20rem;
-       position: relative;
-       right: 100px;
-   }
-   .seccion-registro {
-       width: 10rem;
-       height: 30%;
-   }
-}
-
 @media only screen and (min-width: 481px) and (max-width: 600px) {
-
-
-.productos-dest {
+  .productos-dest {
     margin-right: 8rem;
-}
-.seccion-main{
+  }
+
+  .seccion-main {
     width: 31rem;
     height: 150rem;
     margin-left: 0px;
-}
-.container-img{
+  }
+
+  .container-img {
     margin-bottom: 150px;
-}
-.seccion-main-productos{
+  }
+
+  .seccion-main-productos {
     width: 30rem;
     margin-left: 0px;
     height: 280rem;
-}
-.container-img-productos{
+  }
+
+  .container-img-productos {
     margin-bottom: 160px;
+  }
 }
-.container-canchas{
-    width: 25rem;
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .productos-dest {
+    margin-right: 8rem;
+  }
+
+  .seccion-main {
+    width: 100%;
+    margin-left: 0px;
+    height: 75rem;
+  }
+
+  .container-img {
+    width: 9rem;
+  }
+
+  .seccion-main-productos {
+    width: 37rem;
+    margin-left: 12px;
+    height: 150rem;
+  }
+
+  .container-img-productos {
+    width: 12rem;
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .productos-dest {
+    margin-right: 12rem;
+    width: 40%;
+  }
+
+  .seccion-main {
+    width: 99%;
+    margin-left: 0px;
+    height: 70rem;
+  }
+
+  .container-img {
+    width: 22%;
+  }
+
+  .seccion-main-productos {
+    width: 52rem;
+    margin-left: 10px;
+    height: 140rem;
+  }
+
+  .container-img-productos {
+    margin-bottom: 110px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  .productos-dest {
+    width: 30%;
+  }
+
+  .seccion-main {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .container-img {
+    margin-bottom: 50px;
     position: relative;
-    right: 8rem;
+    left: 40px;
+  }
+
+  .seccion-main-productos {
+    width: 80rem;
+    height: 90rem;
+    margin-left: 150px;
+  }
+
+  .container-img-productos {
+    width: 15rem;
+    margin-bottom: 120px;
+  }
 }
-.seccion-canchas{
-    width: 15rem ;
+.imagen-instructores {
+  position: relative;
+  right: 90px;
+  margin-bottom: 80px;
 }
 
+.parrafo-instructores {
+  background-color: #E6E18F;
+  color: black;
+  height: 85%;
+  border-radius: 1rem;
+  position: relative;
+  top: 15px;
+}
 
-.imagen-inst{
+.instructores-dest {
+  width: 15rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .imagen-inst {
+    width: 300px;
+    height: 300px;
+  }
+
+  .video-inst {
+    width: 500px;
+    position: relative;
+    right: 10rem;
+  }
+
+  .parrafo-instructores {
+    width: 50rem;
+    position: relative;
+    right: 11rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    right: 100px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .imagen-inst {
     width: 30rem;
     height: 20rem;
     position: relative;
     right: 80px;
-}
-.container-conocenos{
-    display: flex;
-    flex-wrap: wrap;
-}
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 800px) {
-
-    
-    .productos-dest {
-        margin-right: 8rem;
-    }
-    .seccion-main{
-        width: 100%;
-        margin-left: 0px;
-        height: 75rem;
-    }
-    .container-img {
-        width: 9rem;
-    }
-    .seccion-main-productos{
-        width: 37rem;
-        margin-left: 12px;
-        height: 150rem;
-    }
-    .container-img-productos{
-        width: 12rem;
-        margin-bottom: 150px;
-    }
-    .seccion-canchas {
-        width: 20rem;
-    }
-    .container-canchas{
-        width: 30rem;
-        position: relative;
-        right: 70px;
-    }
- 
-    .imagen-inst{
-        width: 30rem;
-        height: 20rem;
-    }
-    .container-conocenos{
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+  }
 }
-@media only screen and (min-width: 801px) and (max-width:1200px) {
-    
-    .productos-dest {
-        margin-right: 12rem;
-        width: 40%;
-    }
-    .seccion-main {
-        width:99%;
-        margin-left: 0px;
-        height: 70rem;
-    }
-    .container-img {
-        width: 22%;
-    }
-    .seccion-main-productos{
-        width: 52rem;
-        margin-left: 10px;
-        height: 140rem;
-    }
-    .container-img-productos{
-        margin-bottom: 110px;
-    }
-    .seccion-canchas {
-        width: 40rem;
-        position: relative;
-        right: 70px;
-    }
-
-   
-    .imagen-inst{
-        width: 30rem;
-        height: 20rem;
-    }
-    .container-conocenos{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+  }
 }
-@media only screen and (min-width:1200px) and (max-width:1800px) {
-  
-    .productos-dest {
-        width: 30%;
-    }
-    .seccion-main{
-        width: 100%;
-        margin: 0px;
-    }
-    .container-img {
-        margin-bottom: 50px;
-        position: relative;
-        left: 40px;
-    }
-    .seccion-main-productos{
-        width: 80rem;
-        height: 90rem;
-        margin-left: 150px;
-    }
-    .container-img-productos {
-        width: 15rem;
-        margin-bottom: 120px;
-    }
-    .seccion-canchas {
-        width: 120rem;
-    }
-    .imagen-inst {
-        position: relative;
-        right: 70px;
-        width: max-content;
-        height: max-content;
-    }
-    .parrafo-instructores {
-        width: 40rem;
-        position: relative;
-        left: 1px;
-    }
-    .container-registro {
-        width: 40%;
-    }
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  .imagen-inst {
+    position: relative;
+    right: 70px;
+    width: max-content;
+    height: max-content;
+  }
+
+  .parrafo-instructores {
+    width: 40rem;
+    position: relative;
+    left: 1px;
+  }
 }
+.row {
+  margin-bottom: 150px;
+}
+
+.tipos-cancha {
+  display: flex;
+  justify-content: center;
+  color: black;
+  position: relative;
+  bottom: 40px;
+  left: 29rem;
+  background-color: #E6E18F;
+  height: 25px;
+  width: 40%;
+  border-radius: 1rem;
+}
+
+.cancha-uno-dos {
+  margin-bottom: 50px;
+  padding-right: 30px;
+  position: relative;
+  right: 40px;
+}
+
+.cancha-tres-cuatro {
+  margin-top: 20px;
+  padding-right: 50px;
+  position: relative;
+  right: 40px;
+}
+
+.seccion-tablas {
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 50px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .seccion-canchas {
+    width: 10rem;
+  }
+
+  .container-canchas {
+    width: 20rem;
+    position: relative;
+    right: 100px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .container-canchas {
+    width: 25rem;
+    position: relative;
+    right: 8rem;
+  }
+
+  .seccion-canchas {
+    width: 15rem;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .seccion-canchas {
+    width: 20rem;
+  }
+
+  .container-canchas {
+    width: 30rem;
+    position: relative;
+    right: 70px;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .seccion-canchas {
+    width: 40rem;
+    position: relative;
+    right: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  .seccion-canchas {
+    width: 120rem;
+  }
+}
+.imagen-conocenos {
+  position: relative;
+  right: 120px;
+  width: 500px;
+  margin-bottom: 80px;
+  margin-left: 160px;
+}
+
+.parrafo-conocenos {
+  height: 80%;
+  position: relative;
+  top: 25px;
+}
+
+.container-conocenos {
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imagen-conocenos {
+    width: min-content;
+    height: min-content;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+footer {
+  background-color: #E6E18F;
+}
+
+.seccion-registro {
+  height: 77%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-registro {
+  background-color: #E6E18F;
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.boton-registro {
+  margin-bottom: 10px;
+  width: 15%;
+}
+
+.container-secciones {
+  list-style: none;
+  font-size: 22px;
+}
+
+.container-redes {
+  list-style: none;
+  width: 8rem;
+  padding-left: 0%;
+}
+
+.img-redes {
+  padding: 20px 20px 0px 50px;
+}
+
+.container-pagos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-pagos {
+  padding: 20px 20px 0px 0px;
+}
+
+.pagos-seccion {
+  list-style: none;
+  width: 20px;
+  padding-left: 0px;
+  position: relative;
+  right: 20px;
+}
+
+.container-footer {
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.copyright {
+  background-color: black;
+  color: #E6E18F;
+  display: flex;
+  justify-content: center;
+}
+
+.github {
+  text-decoration: none;
+  color: #E6E18F;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .seccion-registro {
+    width: 10rem;
+    height: 30%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  .container-registro {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
