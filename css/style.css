@@ -7,14 +7,6 @@ body {
   background-color: black;
 }
 
-.productos-dest {
-  margin: 50px 10rem 50px 50px;
-  width: 25%;
-  font-size: 30px;
-  color: black;
-  background-color: #E6E18F;
-}
-
 .titulo:hover {
   text-shadow: 0px 5px 10px #050505;
 }
@@ -41,162 +33,42 @@ p, h2 {
 }
 
 .seccion-main-productos {
-  height: 75rem;
+  height: 70rem;
   width: max-content;
   margin-left: 14rem;
 }
 
 .container-img, .card-img-top, .container-img-productos {
-  height: 150px;
   width: 14rem;
+  height: 150px;
   margin-right: 80px;
 }
 
-@media only screen and (min-width: 320px) {
-  .productos-dest {
-    width: 60%;
-    position: relative;
-    left: 2rem;
-  }
+.copyright, .container-pagos, .seccion-registro, .productos-dest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .productos-dest {
-    margin-left: 3rem;
-  }
 
-  .seccion-main {
-    height: 165rem;
-    width: 30rem;
-    margin-left: 0px;
-  }
-
-  .container-img {
-    margin-bottom: 160px;
-  }
-
-  .seccion-main-productos {
-    width: 30rem;
-    margin-left: 5px;
-    height: 280rem;
-  }
-
-  .container-img-productos {
-    margin-bottom: 150px;
-  }
+.productos-dest {
+  margin: 50px 10rem 50px 50px;
+  width: 30%;
+  font-size: 30px;
+  color: black;
+  background-color: #E6E18F;
+  border-radius: 10px;
 }
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-  .productos-dest {
-    margin-right: 8rem;
-  }
 
-  .seccion-main {
-    width: 31rem;
-    height: 150rem;
-    margin-left: 0px;
-  }
-
-  .container-img {
-    margin-bottom: 150px;
-  }
-
-  .seccion-main-productos {
-    width: 30rem;
-    margin-left: 0px;
-    height: 280rem;
-  }
-
-  .container-img-productos {
-    margin-bottom: 160px;
-  }
+.row .parrafo-instructores {
+  color: black;
+  background-color: #E6E18F;
 }
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-  .productos-dest {
-    margin-right: 8rem;
-  }
 
-  .seccion-main {
-    width: 100%;
-    margin-left: 0px;
-    height: 75rem;
-  }
-
-  .container-img {
-    width: 9rem;
-  }
-
-  .seccion-main-productos {
-    width: 37rem;
-    margin-left: 12px;
-    height: 150rem;
-  }
-
-  .container-img-productos {
-    width: 12rem;
-    margin-bottom: 150px;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
-  .productos-dest {
-    margin-right: 12rem;
-    width: 40%;
-  }
-
-  .seccion-main {
-    width: 99%;
-    margin-left: 0px;
-    height: 70rem;
-  }
-
-  .container-img {
-    width: 22%;
-  }
-
-  .seccion-main-productos {
-    width: 52rem;
-    margin-left: 10px;
-    height: 140rem;
-  }
-
-  .container-img-productos {
-    margin-bottom: 110px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1800px) {
-  .productos-dest {
-    width: 30%;
-  }
-
-  .seccion-main {
-    width: 100%;
-    margin: 0px;
-  }
-
-  .container-img {
-    margin-bottom: 50px;
-    position: relative;
-    left: 40px;
-  }
-
-  .seccion-main-productos {
-    width: 80rem;
-    height: 90rem;
-    margin-left: 150px;
-  }
-
-  .container-img-productos {
-    width: 15rem;
-    margin-bottom: 120px;
-  }
-}
-.imagen-instructores {
+.row .imagen-instructores {
   position: relative;
   right: 90px;
-  margin-bottom: 80px;
 }
-
-.parrafo-instructores {
-  background-color: #E6E18F;
-  color: black;
+.row .parrafo-instructores {
   height: 85%;
   border-radius: 1rem;
   position: relative;
@@ -207,81 +79,13 @@ p, h2 {
   width: 15rem;
 }
 
-@media only screen and (min-width: 320px) {
-  .imagen-inst {
-    width: 300px;
-    height: 300px;
-  }
-
-  .video-inst {
-    width: 500px;
-    position: relative;
-    right: 10rem;
-  }
-
-  .parrafo-instructores {
-    width: 50rem;
-    position: relative;
-    right: 11rem;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-    position: relative;
-    right: 100px;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-    position: relative;
-    right: 80px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1800px) {
-  .imagen-inst {
-    position: relative;
-    right: 70px;
-    width: max-content;
-    height: max-content;
-  }
-
-  .parrafo-instructores {
-    width: 40rem;
-    position: relative;
-    left: 1px;
-  }
-}
 .row {
   margin-bottom: 150px;
 }
 
-.tipos-cancha {
-  display: flex;
-  justify-content: center;
-  color: black;
-  position: relative;
-  bottom: 40px;
-  left: 29rem;
-  background-color: #E6E18F;
-  height: 25px;
-  width: 40%;
-  border-radius: 1rem;
+.seccion-canchas {
+  margin-right: 50px;
+  margin-top: 50px;
 }
 
 .cancha-uno-dos {
@@ -304,107 +108,29 @@ p, h2 {
   bottom: 50px;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .seccion-canchas {
-    width: 10rem;
-  }
-
-  .container-canchas {
-    width: 20rem;
-    position: relative;
-    right: 100px;
-  }
+.container-conocenos {
+  margin-bottom: 80px;
 }
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-  .container-canchas {
-    width: 25rem;
-    position: relative;
-    right: 8rem;
-  }
-
-  .seccion-canchas {
-    width: 15rem;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-  .seccion-canchas {
-    width: 20rem;
-  }
-
-  .container-canchas {
-    width: 30rem;
-    position: relative;
-    right: 70px;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
-  .seccion-canchas {
-    width: 40rem;
-    position: relative;
-    right: 70px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1800px) {
-  .seccion-canchas {
-    width: 120rem;
-  }
-}
-.imagen-conocenos {
+.container-conocenos .imagen-conocenos {
   position: relative;
   right: 120px;
   width: 500px;
   margin-bottom: 80px;
   margin-left: 160px;
 }
-
-.parrafo-conocenos {
+.container-conocenos .parrafo-conocenos {
   height: 80%;
   position: relative;
   top: 25px;
 }
 
-.container-conocenos {
-  margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .container-conocenos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .imagen-conocenos {
-    width: min-content;
-    height: min-content;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-  .container-conocenos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-  .container-conocenos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
-  .container-conocenos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 footer {
   background-color: #E6E18F;
 }
 
 .seccion-registro {
-  height: 77%;
-  display: flex;
-  justify-content: center;
   width: 100%;
+  height: 77%;
 }
 
 .container-registro {
@@ -434,8 +160,6 @@ footer {
 }
 
 .container-pagos {
-  display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -446,7 +170,6 @@ footer {
 .pagos-seccion {
   list-style: none;
   width: 20px;
-  padding-left: 0px;
   position: relative;
   right: 20px;
 }
@@ -459,8 +182,6 @@ footer {
 .copyright {
   background-color: black;
   color: #E6E18F;
-  display: flex;
-  justify-content: center;
 }
 
 .github {
@@ -468,13 +189,271 @@ footer {
   color: #E6E18F;
 }
 
+@media only screen and (min-width: 320px) {
+  .productos-dest {
+    width: 60%;
+    position: relative;
+    left: 2rem;
+  }
+
+  .imagen-inst {
+    width: 300px;
+    height: 300px;
+  }
+
+  .video-inst {
+    width: 500px;
+    position: relative;
+    right: 10rem;
+  }
+
+  .parrafo-instructores {
+    width: 50rem;
+    position: relative;
+    right: 11rem;
+  }
+}
 @media only screen and (min-width: 321px) and (max-width: 480px) {
+  .productos-dest {
+    margin-left: 3rem;
+  }
+
+  .seccion-main {
+    width: 30rem;
+    height: 165rem;
+    margin-left: 0px;
+  }
+
+  .container-img {
+    margin-bottom: 160px;
+  }
+
+  .seccion-main-productos {
+    width: 30rem;
+    height: 280rem;
+    margin-left: 5px;
+  }
+
+  .container-img-productos {
+    margin-bottom: 150px;
+  }
+
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    right: 100px;
+  }
+
+  .seccion-canchas {
+    width: 10rem;
+  }
+
+  .container-canchas {
+    width: 20rem;
+    position: relative;
+    right: 100px;
+  }
+
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imagen-conocenos {
+    width: min-content;
+    height: min-content;
+  }
+
   .seccion-registro {
     width: 10rem;
     height: 30%;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .productos-dest {
+    margin-right: 8rem;
+  }
+
+  .seccion-main {
+    width: 31rem;
+    height: 150rem;
+    margin-left: 0px;
+  }
+
+  .container-img {
+    margin-bottom: 150px;
+  }
+
+  .seccion-main-productos {
+    width: 30rem;
+    height: 280rem;
+    margin-left: 0px;
+  }
+
+  .container-img-productos {
+    margin-bottom: 160px;
+  }
+
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    right: 80px;
+  }
+
+  .parrafo-instructores {
+    width: 80rem;
+    height: 30rem;
+  }
+
+  .container-canchas {
+    width: 25rem;
+    position: relative;
+    right: 8rem;
+  }
+
+  .seccion-canchas {
+    width: 15rem;
+  }
+
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .productos-dest {
+    margin-right: 8rem;
+  }
+
+  .seccion-main {
+    width: 100%;
+    height: 75rem;
+    margin-left: 0px;
+  }
+
+  .container-img {
+    width: 9rem;
+  }
+
+  .seccion-main-productos {
+    width: 37rem;
+    height: 150rem;
+    margin-left: 12px;
+  }
+
+  .container-img-productos {
+    width: 12rem;
+    margin-bottom: 150px;
+  }
+
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .seccion-canchas {
+    width: 20rem;
+  }
+
+  .container-canchas {
+    width: 30rem;
+    position: relative;
+    right: 70px;
+  }
+
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .productos-dest {
+    margin-right: 12rem;
+    width: 40%;
+  }
+
+  .seccion-main {
+    width: 99%;
+    margin-left: 0px;
+    height: 70rem;
+  }
+
+  .container-img {
+    width: 22%;
+  }
+
+  .seccion-main-productos {
+    width: 52rem;
+    margin-left: 10px;
+    height: 140rem;
+  }
+
+  .container-img-productos {
+    margin-bottom: 110px;
+  }
+
+  .imagen-inst {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .container-conocenos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .seccion-canchas {
+    width: 40rem;
+    position: relative;
+    right: 70px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+  .productos-dest {
+    width: 30%;
+  }
+
+  .seccion-main {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .container-img {
+    margin-bottom: 50px;
+    position: relative;
+    left: 40px;
+  }
+
+  .seccion-main-productos {
+    width: 80rem;
+    height: 90rem;
+    margin-left: 150px;
+  }
+
+  .container-img-productos {
+    width: 15rem;
+    margin-bottom: 120px;
+  }
+
+  .imagen-inst {
+    position: relative;
+    right: 70px;
+    width: max-content;
+    height: max-content;
+  }
+
+  .parrafo-instructores {
+    width: 40rem;
+    position: relative;
+    left: 1px;
+  }
+
+  .seccion-canchas {
+    width: 120rem;
+  }
+
   .container-registro {
     width: 40%;
   }
