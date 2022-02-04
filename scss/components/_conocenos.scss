@@ -1,0 +1,21 @@
+.productos-dest { 
+    @extend %titulo;
+    @extend %flex
+}
+.container-conocenos{
+    margin-bottom: 80px;
+
+    .imagen-conocenos {
+        position: relative;
+        right: 120px;
+        width: 500px;
+        margin-bottom: 80px;
+        margin-left: 160px;
+    }
+    .parrafo-conocenos {
+        height: 80%;
+        position: relative;
+        top: 25px;
+    }
+
+}

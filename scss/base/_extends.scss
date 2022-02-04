@@ -1,0 +1,18 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%titulo {
+    margin: 50px 10rem 50px 50px;
+    width: 30%;
+    font-size: 30px;
+     color: $color-secundario;
+     background-color: $color-principal;
+     border-radius: 10px;
+}
+%color {
+    color: black;
+    background-color: #E6E18F;
+}

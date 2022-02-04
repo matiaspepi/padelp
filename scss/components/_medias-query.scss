@@ -1,0 +1,210 @@
+@media only screen and (min-width: 320px) {
+    .productos-dest {
+        width: 60%;
+    position: relative;
+    left: 2rem;
+    }
+    .imagen-inst {
+       @include medidas (300px,300px);
+    }
+    .video-inst {
+        width: 500px;
+        position: relative;
+        right: 10rem;
+    }
+    .parrafo-instructores {
+        width: 50rem;
+        position: relative;
+        right: 11rem;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    
+    .productos-dest{ 
+           margin-left: 3rem;
+       }
+    .seccion-main {
+      @include medidas (30rem,165rem);
+        margin-left: 0px;
+    }
+    .container-img{
+        margin-bottom: 160px;
+    }
+    .seccion-main-productos{ 
+        @include medidas (30rem,280rem);
+        margin-left: 5px;
+    }
+    .container-img-productos{
+        margin-bottom: 150px;
+    }
+    .imagen-inst {
+        @include medidas (30rem,20rem);
+        position: relative;
+        right: 100px;
+    }
+    .seccion-canchas {
+        width: 10rem;
+    }
+    .container-canchas {
+        width: 20rem;
+        position: relative;
+        right: 100px;
+    }
+    .container-conocenos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imagen-conocenos {
+       @include medidas (min-content,min-content);
+    }
+    .seccion-registro {
+        @include medidas (10rem,30%);
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .productos-dest {
+        margin-right: 8rem;
+    }
+    .seccion-main{
+        @include medidas (31rem,150rem);
+        margin-left: 0px;
+    }
+    .container-img{
+        margin-bottom: 150px;
+    }
+    .seccion-main-productos{
+        @include medidas (30rem,280rem);
+        margin-left: 0px;
+    }
+    .container-img-productos{
+        margin-bottom: 160px;
+    }
+    .imagen-inst{
+        @include medidas (30rem,20rem);
+        position: relative;
+        right: 80px;
+    }
+    .parrafo-instructores {
+        @include medidas (80rem,30rem)
+    }
+    .container-canchas{
+        width: 25rem;
+        position: relative;
+        right: 8rem;
+    }
+    .seccion-canchas{
+        width: 15rem ;
+    }
+    .container-conocenos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+    @media only screen and (min-width: 601px) and (max-width: 800px) {
+        .productos-dest {
+            margin-right: 8rem;
+        }
+        .seccion-main{
+            @include medidas(100%,75rem);
+            margin-left: 0px;
+        }
+        .container-img {
+            width: 9rem;
+        }
+        .seccion-main-productos{
+            @include medidas (37rem,150rem);
+            margin-left: 12px;
+        }
+        .container-img-productos{
+            width: 12rem;
+            margin-bottom: 150px;
+        }
+        .imagen-inst{
+            width: 30rem;
+            height: 20rem;
+        }
+        .seccion-canchas {
+            width: 20rem;
+        }
+        .container-canchas{
+            width: 30rem;
+            position: relative;
+            right: 70px;
+        }
+        .container-conocenos{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    @media only screen and (min-width: 801px) and (max-width:1200px) {
+        .productos-dest {
+            margin-right: 12rem;
+            width: 40%;
+        }
+        .seccion-main {
+            width:99%;
+            margin-left: 0px;
+            height: 70rem;
+        }
+        .container-img {
+            width: 22%;
+        }
+        .seccion-main-productos{
+            width: 52rem;
+            margin-left: 10px;
+            height: 140rem;
+        }
+        .container-img-productos{
+            margin-bottom: 110px;
+        }
+        .imagen-inst{
+            @include medidas (30rem,20rem);
+        }
+        .container-conocenos{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .seccion-canchas {
+            width: 40rem;
+            position: relative;
+            right: 70px;
+        }
+    }
+    @media only screen and (min-width:1201px) and (max-width:1800px) {
+        .productos-dest {
+            width: 30%;
+        }
+        .seccion-main{
+            width: 100%;
+            margin: 0px;
+        }
+        .container-img {
+            margin-bottom: 50px;
+            position: relative;
+            left: 40px;
+        }
+        .seccion-main-productos{
+            @include medidas (80rem,90rem);
+            margin-left: 150px;
+        }
+        .container-img-productos {
+            width: 15rem;
+            margin-bottom: 120px;
+        }
+        .imagen-inst {
+            position: relative;
+            right: 70px;
+            @include medidas (max-content,max-content);
+        }
+        .parrafo-instructores {
+            width: 40rem;
+            position: relative;
+            left: 1px;
+        }
+        .seccion-canchas {
+            width: 120rem;
+        }
+        .container-registro {
+            width: 40%;
+        }
+    }

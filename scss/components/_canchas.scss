@@ -1,0 +1,28 @@
+.productos-dest { 
+    @extend %titulo;
+    @extend %flex;
+}
+.row {
+    margin-bottom: 150px;
+}
+.seccion-canchas {
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.cancha-uno-dos {
+    margin-bottom: 50px;
+    padding-right: 30px;
+    position: relative;
+    right: 40px;
+    }
+.cancha-tres-cuatro {
+    margin-top: 20px;
+    padding-right: 50px;
+    position: relative;
+    right: 40px;
+}
+.seccion-tablas {
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 50px;
+}

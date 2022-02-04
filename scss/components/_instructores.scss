@@ -1,0 +1,22 @@
+.productos-dest { 
+    @extend %titulo;
+    @extend %flex
+}
+.row {
+    .imagen-instructores{ 
+        position: relative;
+        right:  90px;
+    }
+    .parrafo-instructores {
+    @extend %color;
+    @include medidas (null,85%);
+    border-radius: 1rem;
+    position: relative;
+    top: 15px;
+    }
+}
+.instructores-dest {
+ @include medidas (15rem,null);
+} 
+
+    
