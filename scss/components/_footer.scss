@@ -23,9 +23,17 @@ footer{
        width: 8rem;
        padding-left: 0%;
    }
-  .img-redes {
-      padding: 20px 20px 0px 50px ;
-  }
+   .redes-uno {
+       height: 40%;
+       width: 15%;
+       .img-redes{ @extend %flex;
+           margin-bottom: 10px;
+       }
+       .redes:hover {
+           transition: all 1s;
+           transform: scale(2);
+       }
+   }
   .container-pagos {
       @extend %flex;
       flex-direction: column;
