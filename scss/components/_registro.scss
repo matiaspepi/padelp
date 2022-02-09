@@ -1,4 +1,18 @@
+@import "../base/extends";
 .productos-dest { 
     @extend %titulo;
-    @extend %flex
+    @extend %flex;
+    position: relative;
+    left: 40px;
+}
+.seccion-registro {
+    background-color: #E6E18F;
+    @extend %flex ;
+    width: 70%;
+    height: 33rem;
+
+}
+.container-registro {
+    width: 90%;
+
 }

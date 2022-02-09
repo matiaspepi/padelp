@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 360px) and (max-width:400px) {
     .productos-dest {
         width: 60%;
     position: relative;
@@ -18,7 +18,7 @@
         right: 11rem;
     }
 }
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 401px) and (max-width: 480px) {
     
     .productos-dest{ 
            margin-left: 3rem;
@@ -184,7 +184,7 @@
             left: 40px;
         }
         .seccion-main-productos{
-            @include medidas (80rem,90rem);
+            @include medidas (80rem,93rem);
             margin-left: 150px;
         }
         .container-img-productos {

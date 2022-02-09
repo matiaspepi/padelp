@@ -1,61 +1,68 @@
 footer{
-    background-color: $color-principal
+        background-color: $color-principal;
+    .seccion-registro {
+        @extend %flex;
+        @include medidas (100%, 77%);
+      }
+      .container-registro {
+        background-color: $color-principal;
+        margin-top: 5%;
+        padding: 20px;
+     }
+     .boton-registro {
+         margin-bottom: 10px;
+         width: 15%;
+     }
+     .container-secciones {
+         list-style: none;
+         font-size: 22px;
+     }
+     .redes-uno {
+        height: 40%;
+        width: 15%;
+     .container-redes{
+            list-style: none;
+             width: 8rem;
+         padding-left: 0%;}
+        
+        .img-redes{ 
+            @extend %flex;
+            margin-bottom: 10px;
+            }
+        .redes:hover {
+            transition: all 0.5s;
+            transform: scale(1.5);
+            }
+     }
+     
+    .container-pagos {
+            @extend %flex;
+            flex-direction: column;
+        .img-pagos {
+            padding: 20px 20px 0px 0px;
+        }
+        .pagos-seccion {
+            list-style: none;
+            width: 20px;
+            position: relative;
+            right: 20px;
+        }
+    }
+    
+    .container-footer {
+        margin-bottom: 50px;
+        margin-top: 60px;
+    }
+     .copyright { 
+             background-color: $color-secundario;
+            color: $color-principal;
+            @extend %flex;
+    .github {
+            text-decoration: none;
+            color: $color-principal
+        }
+     }
+     
    }
-   .seccion-registro {
-       @extend %flex;
-      @include medidas (100%, 77%);
-   }
-   .container-registro {
-      background-color: $color-principal;
-      margin-top: 5%;
-      padding: 20px;
-   }
-   .boton-registro {
-       margin-bottom: 10px;
-       width: 15%;
-   }
-   .container-secciones {
-       list-style: none;
-       font-size: 22px;
-   }
-   .container-redes{
-       list-style: none;
-       width: 8rem;
-       padding-left: 0%;
-   }
-   .redes-uno {
-       height: 40%;
-       width: 15%;
-       .img-redes{ @extend %flex;
-           margin-bottom: 10px;
-       }
-       .redes:hover {
-           transition: all 1s;
-           transform: scale(2);
-       }
-   }
-  .container-pagos {
-      @extend %flex;
-      flex-direction: column;
-  }
-  .img-pagos {
-      padding: 20px 20px 0px 0px;
-  }
-  .pagos-seccion {
-      list-style: none;
-      width: 20px;
-      position: relative;
-      right: 20px;
-  }
-  .container-footer {
-      margin-bottom: 50px;
-      margin-top: 60px;
-  }
-   .copyright { background-color: $color-secundario;
-       color: $color-principal;
-      @extend %flex;
-   }
-   .github {
-       text-decoration: none;
-       color: $color-principal
-   }
+   
+   

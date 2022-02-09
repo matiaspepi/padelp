@@ -5,14 +5,15 @@
 .row {
     .imagen-instructores{ 
         position: relative;
-        right:  90px;
+        right:  2px;
+        margin-top: 20px;
     }
     .parrafo-instructores {
-    @extend %color;
-    @include medidas (null,85%);
-    border-radius: 1rem;
+    color: #E6E18F;
+    @include medidas (44%,200px);
     position: relative;
     top: 15px;
+    text-shadow: 2px 2px 3px white;
     }
 }
 .instructores-dest {
@@ -20,3 +21,13 @@
 } 
 
     
+.container-video {
+    @include medidas (110%,100%);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+             .video-inst {
+                 @include medidas (37rem,20rem);
+                 padding-left: 100px;
+        }
+    }
