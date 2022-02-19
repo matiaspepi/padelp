@@ -29,6 +29,7 @@
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "anymatch": "^3.1.2",
+    "aos": "^2.3.4",
     "aproba": "^2.0.0",
     "are-we-there-yet": "^2.0.0",
     "arrify": "^1.0.1",

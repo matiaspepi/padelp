@@ -1,5 +1,5 @@
 footer{
-        background-color: $color-principal;
+    background: linear-gradient( #575655, #0A0909);
     .seccion-registro {
         @extend %flex;
         @include medidas (100%, 77%);
@@ -12,6 +12,14 @@ footer{
      .boton-registro {
          margin-bottom: 10px;
          width: 15%;
+         position: relative;
+         bottom: 40px;
+     }
+     .boton-registro:hover{
+         background: #FFF;
+         box-shadow: 0px 1px 13px 9px rgba(212,196,196,0.58);
+        -webkit-box-shadow: 0px 1px 13px 9px rgba(212,196,196,0.58);
+        -moz-box-shadow: 0px 1px 13px 9px rgba(212,196,196,0.58); 
      }
      .container-secciones {
          list-style: none;
@@ -52,14 +60,23 @@ footer{
     .container-footer {
         margin-bottom: 50px;
         margin-top: 60px;
+        .mail:hover {
+            color: grey;
+        }
     }
      .copyright { 
-             background-color: $color-secundario;
-            color: $color-principal;
+        background: linear-gradient( #575655, #0A0909);
+            color: #FFF;
             @extend %flex;
+    .copyright:hover{
+        color: grey;
+    }
+    .github:hover {
+        color: grey;
+    }
     .github {
             text-decoration: none;
-            color: $color-principal
+            color: #FFF;
         }
      }
      

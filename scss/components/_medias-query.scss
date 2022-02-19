@@ -175,21 +175,9 @@
             width: 30%;
         }
         .seccion-main{
-            width: 100%;
+            width: 75%;
             margin: 0px;
-        }
-        .container-img {
-            margin-bottom: 50px;
-            position: relative;
-            left: 40px;
-        }
-        .seccion-main-productos{
-            @include medidas (80rem,93rem);
-            margin-left: 150px;
-        }
-        .container-img-productos {
-            width: 15rem;
-            margin-bottom: 120px;
+            margin-left: 11rem;
         }
         .imagen-inst {
             position: relative;

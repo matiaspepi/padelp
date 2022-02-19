@@ -6,10 +6,12 @@
     left: 40px;
 }
 .seccion-registro {
-    background-color: #E6E18F;
+    background: linear-gradient(180deg, #868685, #0A0909);
     @extend %flex ;
     width: 70%;
     height: 33rem;
+    color: #fff;
+    border-radius: 15px;
 
 }
 .container-registro {

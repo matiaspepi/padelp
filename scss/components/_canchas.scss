@@ -1,30 +1,95 @@
-.productos-dest { 
-    @extend %titulo;
-    @extend %flex;
+
+
+h1,h2,h3,h4{
+    padding: 0px;
+    margin: 0px;
 }
-.seccion-canchas {
-            position: relative;
-            left: 40px;
-            margin-right: 50px;
-            margin-top: 50px;
-    .row {
-            margin-bottom: 150px;
-        }
-    .cancha-uno-dos {
-            margin-bottom: 50px;
-            padding-right: 30px;
-            position: relative;
-            right: 40px;
-        }
-    .cancha-tres-cuatro {
-            margin-top: 20px;
-            padding-right: 50px;
-            position: relative;
-            right: 40px;
-        }
+
+.caption-style-4{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 0px;
+
+
+}
+
+.caption-style-4 li{
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-style-4 li:hover .caption{
+    opacity: 1;
+}
+
+.caption-style-4 li:hover img{
+    opacity: 1;
+    transform: scale(1.15,1.15);
+    -webkit-transform:scale(1.15,1.15);
+    -moz-transform:scale(1.15,1.15);
+    -ms-transform:scale(1.15,1.15);
+    -o-transform:scale(1.15,1.15);
+}
+
+
+.caption-style-4 img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+.cancha-img {
+    @include medidas (585px,400px);
+}
+.caption-style-4 .caption{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+
+.caption-style-4 img{
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+.caption-style-4 .blur{
+    background-color: rgba(0,0,0,0.65);
+    height: 420px;
+    width: 630px;
+    z-index: 5;
+    position: absolute;
+}
+
+.caption-style-4 .caption-text h1{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.caption-style-4 .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top:180px;
+    padding-left: 170px;
 }
 .seccion-tablas {
-    margin-bottom: 30px;
-    position: relative;
-    bottom: 50px;
+    margin-top: 80px;
+}
+.texto-cancha {
+    font-size: 35px;
 }

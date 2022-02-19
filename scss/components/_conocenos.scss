@@ -4,18 +4,21 @@
 }
 .container-conocenos{
     margin-bottom: 80px;
+    margin-top: 50px;
 
     .imagen-conocenos {
         position: relative;
         right: 120px;
-        width: 500px;
+        width: 550px;
+        height: 400px;
         margin-bottom: 80px;
         margin-left: 160px;
     }
     .parrafo-conocenos {
         height: 80%;
         position: relative;
-        top: 25px;
+        top: 30px;
+        right: 40px;
         text-shadow: 2px 2px 3px white;
     }
 
