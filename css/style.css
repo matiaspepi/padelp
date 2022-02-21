@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+header {
+  width: 100%;
+}
+
 body {
   background-image: url("../imagenes/descarga.jfif");
   font-family: "Lato";
@@ -35,42 +39,42 @@ p, h5 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.seccion-main {
+.seccion-main-uno, .seccion-main-dos {
   width: 100%;
   height: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.seccion-main .card {
+.seccion-main-uno .card, .seccion-main-dos .card {
   border-radius: 7px;
   border: 5px solid #a09c9c;
   width: 210px;
 }
-.seccion-main .card .card-img-top {
+.seccion-main-uno .card .card-img-top, .seccion-main-dos .card .card-img-top {
   width: 200px;
   height: 200px;
 }
-.seccion-main .card .botom-comprar:hover {
+.seccion-main-uno .card .botom-comprar:hover, .seccion-main-dos .card .botom-comprar:hover {
   background: #FFF;
   box-shadow: 0px 1px 13px 9px rgba(212, 196, 196, 0.58);
   -webkit-box-shadow: 0px 1px 13px 9px rgba(212, 196, 196, 0.58);
   -moz-box-shadow: 0px 1px 13px 9px rgba(212, 196, 196, 0.58);
 }
-.seccion-main .card .botom-comprar {
+.seccion-main-uno .card .botom-comprar, .seccion-main-dos .card .botom-comprar {
   background-color: #FFF;
   color: black;
 }
-.seccion-main .box:hover {
+.seccion-main-uno .box:hover, .seccion-main-dos .box:hover {
   transform: scale(1.4);
 }
-.seccion-main .box-uno {
+.seccion-main-uno .box-uno, .seccion-main-dos .box-uno {
   transition: all 2s;
 }
-.seccion-main .productos-dest-row {
+.seccion-main-uno .productos-dest-row, .seccion-main-dos .productos-dest-row {
   margin-top: 8rem;
 }
-.seccion-main .box-uno {
+.seccion-main-uno .box-uno, .seccion-main-dos .box-uno {
   width: 100%;
   height: 38vh;
   border: 4px solid #575655;
@@ -153,19 +157,19 @@ h2 {
   background: linear-gradient(70deg, #F2F2F2, #6F6666);
 }
 
-.section-instructores {
+.seccion-instructores {
   display: flex;
   justify-content: space-around;
   width: 100%;
   height: 70vh;
   align-items: center;
 }
-.section-instructores .imagen-navarro {
+.seccion-instructores .imagen-navarro {
   width: 450px;
   height: 450px;
   background: linear-gradient(180deg, #dddddd, #080808);
 }
-.section-instructores .imagen-navarro .parrafo-navarro {
+.seccion-instructores .imagen-navarro .parrafo-navarro {
   padding-top: 50px;
 }
 
@@ -188,7 +192,7 @@ h2 {
   left: 560px;
 }
 
-.section-instructores-video {
+.seccion-instructores-video {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -396,132 +400,83 @@ footer .copyright .github {
   color: #FFF;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
   .productos-dest {
-    width: 60%;
+    width: 100%;
+  }
+
+  .seccion-main-uno {
+    height: 100rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .seccion-main-dos {
+    height: 80rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .seccion-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .seccion-productos-dos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .seccion-productos-tres {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .seccion-instructores {
+    height: 50rem;
+  }
+
+  .seccion-titulo-instructores {
+    width: 80px;
+  }
+  .seccion-titulo-instructores .guion {
+    width: 0px;
+    height: 0px;
+  }
+
+  .seccion-instructores-video {
+    height: 120rem;
+  }
+  .seccion-instructores-video .video-navarro {
+    width: 250px;
     position: relative;
-    left: 2rem;
+    right: 15rem;
   }
 
-  .imagen-inst {
-    width: 300px;
-    height: 300px;
-  }
-
-  .video-inst {
-    width: 500px;
-    position: relative;
-    right: 10rem;
-  }
-
-  .parrafo-instructores {
-    width: 50rem;
-    position: relative;
-    right: 11rem;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 480px) {
-  .productos-dest {
-    margin-left: 3rem;
-  }
-
-  .seccion-main {
-    width: 30rem;
-    height: 165rem;
-    margin-left: 0px;
-  }
-
-  .container-img {
-    margin-bottom: 160px;
-  }
-
-  .seccion-main-productos {
-    width: 30rem;
-    height: 280rem;
-    margin-left: 5px;
-  }
-
-  .container-img-productos {
-    margin-bottom: 150px;
-  }
-
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-    position: relative;
-    right: 100px;
-  }
-
-  .seccion-canchas {
-    width: 10rem;
-  }
-
-  .container-canchas {
-    width: 20rem;
-    position: relative;
-    right: 100px;
-  }
-
-  .container-conocenos {
+  .container-footer {
+    width: 80%;
+    height: 900px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
-  .imagen-conocenos {
-    width: min-content;
-    height: min-content;
-  }
-
-  .seccion-registro {
-    width: 10rem;
-    height: 30%;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-  .productos-dest {
-    margin-right: 8rem;
-  }
-
-  .seccion-main {
-    width: 31rem;
-    height: 150rem;
-    margin-left: 0px;
-  }
-
-  .container-img {
-    margin-bottom: 150px;
-  }
-
-  .seccion-main-productos {
-    width: 30rem;
-    height: 280rem;
-    margin-left: 0px;
-  }
-
-  .container-img-productos {
-    margin-bottom: 160px;
-  }
-
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-    position: relative;
-    right: 80px;
-  }
-
-  .parrafo-instructores {
-    width: 80rem;
-    height: 30rem;
-  }
-
-  .container-canchas {
-    width: 25rem;
-    position: relative;
-    right: 8rem;
-  }
-
-  .seccion-canchas {
-    width: 15rem;
+  .boton-registro {
+    width: 80%;
   }
 
   .container-conocenos {
@@ -529,81 +484,89 @@ footer .copyright .github {
     flex-wrap: wrap;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .productos-dest {
     margin-right: 8rem;
   }
 
   .seccion-main {
     width: 100%;
-    height: 75rem;
-    margin-left: 0px;
-  }
-
-  .container-img {
-    width: 9rem;
-  }
-
-  .seccion-main-productos {
-    width: 37rem;
-    height: 150rem;
-    margin-left: 12px;
-  }
-
-  .container-img-productos {
-    width: 12rem;
-    margin-bottom: 150px;
-  }
-
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
-  }
-
-  .seccion-canchas {
-    width: 20rem;
-  }
-
-  .container-canchas {
-    width: 30rem;
     position: relative;
-    right: 70px;
+    right: 80px;
+  }
+
+  .seccion-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-left: 40px;
+  }
+
+  .seccion-productos-dos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-left: 40px;
+  }
+
+  .seccion-productos-tres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-left: 40px;
   }
 
   .container-conocenos {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .seccion-instructores {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 500px;
+  }
+
+  .seccion-titulo-instructores {
+    position: relative;
+    right: 220px;
+  }
+
+  .guion {
+    width: 200px;
+  }
+
+  .seccion-instructores-video {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  .seccion-instructores-video .video-navarro {
+    width: 500px;
+  }
 }
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .productos-dest {
     margin-right: 12rem;
-    width: 40%;
+    width: 90%;
   }
 
   .seccion-main {
     width: 99%;
     margin-left: 0px;
-    height: 70rem;
+    height: 35rem;
   }
 
-  .container-img {
-    width: 22%;
-  }
-
-  .seccion-main-productos {
-    width: 52rem;
-    margin-left: 10px;
-    height: 140rem;
-  }
-
-  .container-img-productos {
-    margin-bottom: 110px;
-  }
-
-  .imagen-inst {
-    width: 30rem;
-    height: 20rem;
+  .card-uno {
+    width: 350px;
   }
 
   .container-conocenos {
@@ -617,7 +580,7 @@ footer .copyright .github {
     right: 70px;
   }
 }
-@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+@media only screen and (max-width: 1600px) {
   .productos-dest {
     width: 30%;
   }
@@ -628,11 +591,12 @@ footer .copyright .github {
     margin-left: 11rem;
   }
 
-  .imagen-inst {
-    position: relative;
-    right: 70px;
-    width: max-content;
-    height: max-content;
+  .card-uno {
+    width: 250px;
+  }
+
+  .titulo-instructores {
+    width: 64%;
   }
 
   .parrafo-instructores {
@@ -641,8 +605,10 @@ footer .copyright .github {
     left: 1px;
   }
 
-  .seccion-canchas {
-    width: 120rem;
+  .container-cancha-uno {
+    position: relative;
+    right: 20px;
+    width: 94%;
   }
 
   .container-registro {

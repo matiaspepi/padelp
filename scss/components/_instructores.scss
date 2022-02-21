@@ -4,7 +4,7 @@
 }
  
 
-.section-instructores {
+.seccion-instructores {
     display: flex;
     justify-content: space-around;
     @include medidas ( 100%,70vh);
@@ -35,7 +35,7 @@
     position: relative;
     left: 560px;
 }
-.section-instructores-video {
+.seccion-instructores-video {
     width: 100%;
     display: flex;
     justify-content: space-between;

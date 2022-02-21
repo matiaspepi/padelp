@@ -3,7 +3,9 @@
     padding: 0px;
     margin: 0px;
 }
-
+header {
+  width: 100%;
+}
 body{
   background-image: url("../imagenes/descarga.jfif");
   font-family: "Lato";
@@ -33,7 +35,7 @@ body{
   }
   
 
-  .seccion-main {
+  .seccion-main-uno, .seccion-main-dos {
 
     @include medidas (100%,60%);
     display: flex;
