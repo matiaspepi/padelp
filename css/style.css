@@ -3,6 +3,14 @@
   margin: 0px;
 }
 
+.productos-dest {
+  width: 50%;
+  font-size: 50vh;
+  color: black;
+  border-radius: 10px;
+  background: linear-gradient(70deg, #F2F2F2, #6F6666);
+}
+
 header {
   width: 100%;
 }
@@ -70,9 +78,6 @@ p, h5 {
 }
 .seccion-main-uno .box-uno, .seccion-main-dos .box-uno {
   transition: all 2s;
-}
-.seccion-main-uno .productos-dest-row, .seccion-main-dos .productos-dest-row {
-  margin-top: 8rem;
 }
 .seccion-main-uno .box-uno, .seccion-main-dos .box-uno {
   width: 100%;
@@ -142,19 +147,10 @@ h2 {
             }
 
     */
-.seccion-registro, footer .copyright, footer .container-pagos, footer .redes-uno .img-redes, footer .seccion-registro, .productos-dest {
+.seccion-registro, footer .copyright, footer .container-pagos, footer .redes-uno .img-redes, footer .seccion-registro {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.productos-dest {
-  margin: 50px 10rem 50px 50px;
-  width: 30%;
-  font-size: 50px;
-  color: black;
-  border-radius: 10px;
-  background: linear-gradient(70deg, #F2F2F2, #6F6666);
 }
 
 .seccion-instructores {
@@ -402,11 +398,18 @@ footer .copyright .github {
 
 @media only screen and (max-width: 320px) {
   .productos-dest {
-    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
   }
 
   .seccion-main-uno {
-    height: 100rem;
+    height: 80rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -421,6 +424,7 @@ footer .copyright .github {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 30px;
+    margin-bottom: 10rem;
   }
 
   .seccion-productos {
@@ -565,6 +569,11 @@ footer .copyright .github {
     height: 35rem;
   }
 
+  .seccion-main-dos {
+    margin-top: 70px;
+    height: 300px;
+  }
+
   .card-uno {
     width: 350px;
   }
@@ -615,24 +624,10 @@ footer .copyright .github {
     width: 40%;
   }
 }
-.seccion-registro, .productos-dest, footer .seccion-registro, footer .redes-uno .img-redes, footer .container-pagos, footer .copyright {
+.seccion-registro, footer .seccion-registro, footer .redes-uno .img-redes, footer .container-pagos, footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.productos-dest {
-  margin: 50px 10rem 50px 50px;
-  width: 30%;
-  font-size: 50px;
-  color: black;
-  border-radius: 10px;
-  background: linear-gradient(70deg, #F2F2F2, #6F6666);
-}
-
-.productos-dest {
-  position: relative;
-  left: 40px;
 }
 
 .seccion-registro {

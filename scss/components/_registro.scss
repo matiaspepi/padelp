@@ -1,10 +1,4 @@
 @import "../base/extends";
-.productos-dest { 
-    @extend %titulo;
-    @extend %flex;
-    position: relative;
-    left: 40px;
-}
 .seccion-registro {
     background: linear-gradient(180deg, #868685, #0A0909);
     @extend %flex ;
