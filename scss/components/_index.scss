@@ -2,13 +2,16 @@
 * {
     padding: 0px;
     margin: 0px;
-}.productos-dest {
-  width: 50%;
-  font-size: 50vh;
-  color: black;
-  border-radius: 10px;
-  background: linear-gradient(70deg, #F2F2F2, #6F6666);
 }
+.encabezado {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: rgb(219, 209, 209);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 header {
   width: 100%;
 }
@@ -46,7 +49,7 @@ body{
     @include medidas (100%,60%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; 
   
     .card {
         border-radius: 7px;

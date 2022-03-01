@@ -1,16 +1,6 @@
 
-@media only screen and (max-width : 320px) {
-    .productos-dest {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        position: relative;
-        left: 80px;
-        display: flex;
-        justify-content: center;
-         text-align: center;
-         font-size: 20px;
-         
-    }
+@media only screen and (min-width : 320px){
+    
     .seccion-main-uno{
         height: 80rem;
         display: grid;
@@ -55,6 +45,7 @@
     }
     .seccion-titulo-instructores {
         width: 80px;
+        }
         .guion {
             width: 0px;
             height: 0px;
@@ -62,19 +53,27 @@
     }
 
     .seccion-instructores-video{
-        height: 120rem;
+        height: 100rem;
     .video-navarro {
-        width: 250px;
+        @include medidas (100px,100px);
         position: relative;
         right: 15rem;
 
     }
 }
+    footer {
     .container-footer {
-        width: 80%;
-        height: 900px;
+        width: 40%;
        display: flex;
-       flex-direction: column;
+       flex-wrap: wrap;
+    }
+    .container-secciones {
+        position: relative;
+        left: 150px;
+    }
+    .container-pagos {
+        position: relative;
+        left: 150px;
     }
     .boton-registro {
         width: 80%;
@@ -84,10 +83,99 @@
         flex-wrap: wrap;
     }
 }
-@media only screen and (max-width : 768px) {
-        .productos-dest {
-            margin-right: 8rem;
+
+@media only screen and (min-width:480px)and (max-width:767px){
+    .seccion-main-uno {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 700px;
+        
+    }
+    .seccion-main-dos {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 450px;
+    }
+    .seccion-productos {
+        .card-uno {
+            @include medidas ( 200px,360px);
+            position: relative;
+            right: 20px;
+            .card-img-top {
+                @include medidas (200px,180px);
+            }
         }
+    }
+    .seccion-productos-dos {
+        .card-uno {
+            @include medidas ( 200px,360px);
+            position: relative;
+            right: 20px;
+            .card-img-top {
+                @include medidas (200px,180px);
+            }
+        }
+    }
+    .seccion-productos-tres {
+        .card-uno {
+            @include medidas ( 200px,360px);
+            position: relative;
+            right: 20px;
+            .card-img-top {
+                @include medidas (200px,180px);
+            }
+        }
+    }
+    .seccion-titulo-instructores {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 200px;
+        width: 70%;
+        .guion {
+          @include medidas (0px,0px);
+        }
+    }
+    .seccion-instructores-video {
+        position: relative;
+        right: 85px;
+        width: 400px;
+        margin-bottom: 250px;
+        .video-navarro {
+            @include medidas (10%,300px);
+            position: relative;
+            right: 20px;
+        }
+        .parrafo-instructores {
+            position: relative;
+            left: 80px;
+        }
+    }
+    .container-conocenos {
+        .imagen-conocenos {
+            @include medidas (400px,300px);
+            position: relative;
+            right: 77px;
+        }
+        .parrafo-conocenos{
+            position: relative;
+            right: 20px;
+        }
+    }
+    .container-footer {
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seccion-boton {
+        .boton-registro {
+            width: 150px;
+        }
+    }
+   
+}
+
+@media only screen and (min-width : 768px) and (max-width:1023px){
+    
         .seccion-main{
         width: 100%;
         position: relative;
@@ -123,11 +211,12 @@
         .seccion-instructores {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 500px;
+            margin-bottom: 20rem;
         }
         .seccion-titulo-instructores {
             position: relative;
             right: 220px;
+            margin-top: 30rem;
         }
         .guion {
             width: 200px;
@@ -143,56 +232,101 @@
                 width: 500px;
             }
         }
+        .seccion-registro {
+            @include medidas (500px,480px);
+            .container-registro {
+                @include medidas (400px,900px);
+                padding-top: 250px;
+            }
+        }
     }
-    @media only screen and (max-width:1200px) {
-        .productos-dest {
-            margin-right: 12rem;
-            width: 90%;
+    @media only screen and (min-width: 1024px) and (max-width:1199px){
+        .seccion-main-uno {
+            margin-bottom: 100px;
         }
-        .seccion-main {
-            width:99%;
-            margin-left: 0px;
-            height: 35rem;
+        .seccion-instructores {
+            margin-bottom: 80px;
         }
-        .seccion-main-dos {
-            margin-top: 70px;
-            height: 300px;
+        .seccion-titulo-instructores{
+            .titulo-instructores {
+                width: 500px;
+            }
+            .guion {
+                width: 140px;
+            }
         }
-       .card-uno {
-           width: 350px;
-       }
-        .container-conocenos{
+        .seccion-instructores-video {
+            .video-navarro {
+                width: 500px;
+            }
+            .parrafo-instructores {
+                position: relative;
+                bottom: 40px;
+            }
+        }
+        .container-conocenos {
             display: flex;
             flex-wrap: wrap;
-        }
-        .seccion-canchas {
-            width: 40rem;
-            position: relative;
-            right: 70px;
+            .parrafo-conocenos {
+               margin-left: 40px;
+            }
         }
     }
-    @media only screen 
-   and (max-width : 1600px) {
-        .productos-dest {
-            width: 30%;
 
+    @media only screen and (min-width : 1200px) and (max-width:1800px){
+        
+        
+        .seccion-main-uno {
+            display: flex;
+            justify-content: space-between;
+            @include medidas (80%, 500px);
+         
         }
-        .seccion-main{
-            width: 75%;
-            margin: 0px;
-            margin-left: 11rem;
+        .seccion-main-dos {
+            display: flex;
+            justify-content: space-between;
+            @include medidas (80%, 500px);
+            margin-left: 100px;
+            position: relative;
+            left: 60px;
         }
-        .card-uno {
-            width: 250px;
+        .seccion-productos,.seccion-productos-dos,.seccion-productos-tres{
+            display: flex;
+            justify-content: center;
+            .card-uno{
+                margin-left: 30px;
+            }
         }
+         .seccion-instructores {
+             margin-top: -150px;
+         }
+        .seccion-titulo-instructores{
         .titulo-instructores {
-            width: 64%;
+            width: 900px;
+        }
+        .guion {
+            margin-top: 20px;
+            width: 600px;
+            height: 1px;
+        }
+    }
+    .seccion-instructores-video {
+        height: 700px;
+        .video-navarro {
+            width: 800px;
+            height: 440px;
+           position: relative;
+           left: 30px;
         }
         .parrafo-instructores {
+            font-size: 25px;
             width: 40rem;
             position: relative;
             left: 1px;
+            bottom: 10px;
         }
+    }
+        
         .container-cancha-uno {
             position: relative;
             right: 20px;
@@ -202,6 +336,28 @@
         .container-registro {
             width: 40%;
         }
+        footer {
+            .container-footer {
+                height: 300px;
+                width: 85%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .redes-uno {
+                margin-top: 10px;
+                margin-left: 50px;
+                position: relative;
+                left: 80px;
+                bottom: 10px;
+            }
+            .container-pagos {
+                position: relative;
+                bottom: 20px;
+            }
+            .seccion-boton {
+                .boton-registro {
+                    width: 170px;
+                }
+            }
+        }
     }
-
-       
