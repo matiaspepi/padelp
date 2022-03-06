@@ -1,5 +1,5 @@
 
-@media only screen and (min-width : 320px){
+@media only screen and (min-width: 320px){
     
     .seccion-main-uno{
         height: 80rem;
@@ -25,6 +25,9 @@
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 30px;
+        .card-uno {
+            width: 250px;
+        }
     }
     .seccion-productos-dos {
         display: grid;
@@ -32,6 +35,9 @@
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 30px;
+        .card-uno{
+            width: 250px;
+        }
     }
     .seccion-productos-tres {
         display: grid;
@@ -39,13 +45,24 @@
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 30px;
+        .card-uno {
+            width: 250px;
+        }
     }
     .seccion-instructores{
         height: 50rem;
+        display: flex;
+        flex-wrap: wrap;
+        .imagen-navarro {
+            @include medidas (250px,350px);
+            margin-bottom: 20px;
+        } 
     }
     .seccion-titulo-instructores {
-        width: 80px;
-        }
+        width: 480px;
+        margin-top: 300px;
+        position: relative;
+        right: 370px;
         .guion {
             width: 0px;
             height: 0px;
@@ -53,28 +70,47 @@
     }
 
     .seccion-instructores-video{
-        height: 100rem;
+        height: 60rem;
+        display: flex;
+        flex-wrap: wrap
+    }
+
     .video-navarro {
-        @include medidas (100px,100px);
+        @include medidas (500px,200px);
         position: relative;
-        right: 15rem;
+        right: 8rem;
 
     }
-}
+    .container-cancha-uno {
+     position: relative;
+     right: 70px;
+     @include medidas (400px,500px);
+    }
+    .container-conocenos {
+        display: flex;
+        flex-wrap: wrap;
+        .imagen-conocenos {
+            @include medidas (300px,300px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parrafo-conocenos {
+            margin-left: 70px;
+        }
+    }
     footer {
+        width: 100%;
     .container-footer {
-        width: 40%;
-       display: flex;
-       flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .container-secciones,.redes-uno,.container-pagos,.contacto-section {
+            margin-right: 40px;
+        }
     }
-    .container-secciones {
-        position: relative;
-        left: 150px;
-    }
-    .container-pagos {
-        position: relative;
-        left: 150px;
-    }
+   
+    
     .boton-registro {
         width: 80%;
     }
@@ -83,54 +119,79 @@
         flex-wrap: wrap;
     }
 }
+}
 
-@media only screen and (min-width:480px)and (max-width:767px){
+@media only screen and (min-width:480px) and (max-width:767px){
+     .encabezado {
+         padding-left: 40px;
+     }
     .seccion-main-uno {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 700px;
-        
+            margin-bottom: 40px;
     }
     .seccion-main-dos {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 450px;
+        margin-bottom: 40px;
     }
     .seccion-productos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 20px;
+            margin-left: 20px;
         .card-uno {
             @include medidas ( 200px,360px);
             position: relative;
-            right: 20px;
+            right: 20px;          
             .card-img-top {
                 @include medidas (200px,180px);
             }
         }
     }
     .seccion-productos-dos {
-        .card-uno {
-            @include medidas ( 200px,360px);
-            position: relative;
-            right: 20px;
-            .card-img-top {
-                @include medidas (200px,180px);
-            }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+        margin-left: 35px;
+    .card-uno {
+        @include medidas ( 200px,360px);
+        position: relative;
+        right: 20px;          
+        .card-img-top {
+            @include medidas (200px,180px);
         }
     }
+}
     .seccion-productos-tres {
-        .card-uno {
-            @include medidas ( 200px,360px);
-            position: relative;
-            right: 20px;
-            .card-img-top {
-                @include medidas (200px,180px);
-            }
-        }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+        margin-left: 35px;
+    .card-uno {
+        @include medidas ( 200px,360px);
+        position: relative;
+        right: 20px;          
+    .card-img-top {
+        @include medidas (200px,180px);
     }
+}
+}
     .seccion-titulo-instructores {
         display: flex;
         flex-wrap: wrap;
         padding-top: 200px;
-        width: 70%;
+        width: 800px;
+        .titulo-instructores {
+            width: 400px;
+            margin-left: 30px;
+        }
         .guion {
           @include medidas (0px,0px);
         }
@@ -141,14 +202,19 @@
         width: 400px;
         margin-bottom: 250px;
         .video-navarro {
-            @include medidas (10%,300px);
-            position: relative;
-            right: 20px;
-        }
-        .parrafo-instructores {
+            @include medidas (450px,300px);
             position: relative;
             left: 80px;
         }
+        .parrafo-instructores {
+            position: relative;
+            left: 110px;
+        }
+    }
+    .container-cancha-uno {
+        padding-left: 20px;
+        @include medidas (500px,300px);
+        margin-bottom: 150px;
     }
     .container-conocenos {
         .imagen-conocenos {
@@ -161,25 +227,36 @@
             right: 20px;
         }
     }
-    .container-footer {
-        width: 350px;
-        display: flex;
-        flex-wrap: wrap;
-    }
     .seccion-boton {
         .boton-registro {
             width: 150px;
         }
     }
-   
+   footer {
+       .container-footer {
+           width: 450px;
+           .redes-uno {
+               margin-right: 120px;
+           }
+       }
+   }
 }
 
 @media only screen and (min-width : 768px) and (max-width:1023px){
     
-        .seccion-main{
-        width: 100%;
-        position: relative;
-        right: 80px;
+        .seccion-main-uno{
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+           
+        }
+        .seccion-main-dos{
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 700px;
         }
        .seccion-productos {
         display: grid;
@@ -188,6 +265,9 @@
         grid-column-gap: 50px;
         grid-row-gap: 50px;
         margin-left: 40px;
+        .card-uno {
+            width: 250px;
+        }
        }
        .seccion-productos-dos {
         display: grid;
@@ -196,6 +276,9 @@
         grid-column-gap: 50px;
         grid-row-gap: 50px;
         margin-left: 40px;
+        .card-uno {
+            width: 250px;
+        }
        }
        .seccion-productos-tres {
         display: grid;
@@ -203,7 +286,11 @@
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 50px;
         grid-row-gap: 50px;
-        margin-left: 40px;       }
+        margin-left: 40px;
+        .card-uno {
+            width: 250px;
+        }      
+     }
         .container-conocenos{
             display: flex;
             flex-wrap: wrap;
@@ -211,12 +298,11 @@
         .seccion-instructores {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 20rem;
+            margin-bottom: 10rem;
         }
         .seccion-titulo-instructores {
             position: relative;
             right: 220px;
-            margin-top: 30rem;
         }
         .guion {
             width: 200px;
@@ -229,9 +315,25 @@
             margin-top: 200px;
             margin-left: 100px;
             .video-navarro {
-                width: 500px;
+                width: 700px;
+                padding-left: 100px;
             }
         }
+        .container-cancha-uno {
+            @include medidas (700px,500px);
+            padding-left: 70px;
+            
+        }
+        .container-conocenos {
+            margin-top: 70px;
+            .imagen-conocenos {
+                margin-left: 230px;
+            }
+            .parrafo-conocenos {
+                margin-left: 70px
+            }
+        }
+      
         .seccion-registro {
             @include medidas (500px,480px);
             .container-registro {
@@ -239,36 +341,112 @@
                 padding-top: 250px;
             }
         }
-    }
+        .seccion-boton {
+            .boton-registro {
+                width: 200px;
+            }
+        }
+        footer {
+            width: 100%;
+            .container-footer {
+                width: 780px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+}
     @media only screen and (min-width: 1024px) and (max-width:1199px){
         .seccion-main-uno {
-            margin-bottom: 100px;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .seccion-main-dos {
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5px;
+        }
+        .seccion-productos {
+            display: flex;
+            justify-content: space-between;
+            .card-uno {
+                width: 250px;
+                .card-img-top{
+                    @include medidas (200px,150px);
+                }
+            }
+        }
+        .seccion-productos-dos {
+
+            display: flex;
+            justify-content: space-between;
+            .card-uno {
+                width: 250px;
+                .card-img-top{
+                    @include medidas (200px,150px);
+                }
+            }
+        }
+        .seccion-productos-tres {
+            display: flex;
+            justify-content: space-between;
+            .card-uno {
+                width: 250px;
+                .card-img-top{
+                    @include medidas (200px,150px);
+                }
+            }
         }
         .seccion-instructores {
             margin-bottom: 80px;
+            .imagen-navarro {
+                @include medidas (600px,600px);
+            }
         }
         .seccion-titulo-instructores{
             .titulo-instructores {
-                width: 500px;
+                width: 800px;
+                margin-left: 90px;
             }
             .guion {
-                width: 140px;
+                width: 700px;
+                height: 1px;
             }
         }
         .seccion-instructores-video {
             .video-navarro {
-                width: 500px;
+                @include medidas (800px,400px);
+                margin-left: 250px;
             }
-            .parrafo-instructores {
-                position: relative;
-                bottom: 40px;
-            }
+        }
+        .container-cancha-uno {
+            @include medidas (1000px,900px);
+            margin-left: 40px;
         }
         .container-conocenos {
             display: flex;
             flex-wrap: wrap;
             .parrafo-conocenos {
                margin-left: 40px;
+            }
+        }
+        footer {
+            .container-footer {
+                @include medidas (100%,300px);
+                display: flex;
+                justify-content: space-between;
+                .container-pagos {
+                    position: relative;
+                    bottom: 20px;
+                }
+                
+            }
+           
+        }
+        .seccion-boton {
+            .boton-registro {
+                width: 100px;
             }
         }
     }
@@ -286,7 +464,7 @@
             display: flex;
             justify-content: space-between;
             @include medidas (80%, 500px);
-            margin-left: 100px;
+            margin-left: 78px;
             position: relative;
             left: 60px;
         }
@@ -298,32 +476,32 @@
             }
         }
          .seccion-instructores {
-             margin-top: -150px;
+             .imagen-navarro {
+                 @include medidas ( 700px,500px);
+             }
+
          }
         .seccion-titulo-instructores{
+            margin-bottom: 80px;
         .titulo-instructores {
             width: 900px;
+            margin-left: 250px;
         }
         .guion {
             margin-top: 20px;
-            width: 600px;
+            width: 900px;
             height: 1px;
         }
     }
     .seccion-instructores-video {
-        height: 700px;
+        height: 900px;
         .video-navarro {
-            width: 800px;
-            height: 440px;
-           position: relative;
-           left: 30px;
+            @include medidas (900px,500px);
+          position: relative;
+          left: 270px;
         }
         .parrafo-instructores {
             font-size: 25px;
-            width: 40rem;
-            position: relative;
-            left: 1px;
-            bottom: 10px;
         }
     }
         
@@ -331,15 +509,20 @@
             position: relative;
             right: 20px;
             width: 94%;
+            margin-left: 50px;
         }
        
         .container-registro {
             width: 40%;
         }
+        .container-conocenos {
+            .imagen-conocenos{
+                @include medidas (600px,500px);
+            }
+        }
         footer {
             .container-footer {
-                height: 300px;
-                width: 85%;
+                @include medidas (85%,300px);
                 display: flex;
                 justify-content: space-between;
             }
@@ -353,6 +536,8 @@
             .container-pagos {
                 position: relative;
                 bottom: 20px;
+                left: 100px;
+                margin-left: 60px;
             }
             .seccion-boton {
                 .boton-registro {
