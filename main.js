@@ -1,38 +1,38 @@
-//let nombre =  prompt ("ingrese su Nombre");
+class Producto {
+    constructor (numero, precio, stock){
+        this.numero= numero;
+        this.precio= parseInt(precio);
+        this.stock= stock;
+    }
+}
 
-//let apellido = prompt ("ingrese su apellido");
-
-//while  (nombre != "" && apellido !="") {
-
-    //if ( nombre != apellido) {
-        //alert ("Bienvenido"+ " " + nombre + " " + apellido)
-        //break;
-    //}
-    //else {
-       // alert ("Erorr: los datos ingresados son incorrectos")
-   // }
-//}
+const arrayProductos = [];
+arrayProductos.push(new Producto ("paletas", 15000, 20));
+arrayProductos.push(new Producto ("bolsos", 7000, 12));
+arrayProductos.push(new Producto ("zapatillas", 15000, 18));
 
 
 let total = 0 ;
-let precio = 0 ;
-let masProductos = false;
+
 
 function agregarAlCarrito() {
 
+    let otroProducto = false;
+
     do {
 
-        let producto = prompt("¿Querés comprar:\n 1- paletas?\n 2- bolsos?\n 3- zapatillas?", "Ej: 0");
+        let producto = prompt("¿Querés comprar:\n paletas?\n bolsos?\n zapatillas?", "Ej: 0");
         let cantidad = parseInt(prompt("¿Cuantos queres comprar?", 0));
+        let precio;
 
         switch (producto) {
-            case "1":
+            case arrayProductos[0].numero:
                 precio = 15000;
                 break;
-            case "2":
+            case arrayProductos[1].numero:
                 precio = 7000;
                 break;
-            case "3":
+            case arrayProductos[2].numero:
                 precio = 12000;
                 break;
             default:
@@ -72,3 +72,14 @@ function aplicarDescuento(total) {
 
 agregarAlCarrito ();
 calcularEnvio (aplicarDescuento(total));
+
+
+
+
+
+
+
+
+
+
+
