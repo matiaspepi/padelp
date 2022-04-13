@@ -187,26 +187,41 @@
 // agregarAlCarrito();
 // totalAPagar(calcularEnvio(calcularDescuento(total)), cantidadCuotas(), calcularIntereses(cuotas))
 
+// import {productos} from "./prodcutos.js";
 
+// const contenedorProducto = document.getElementsByClassName ("seccion-main-uno");
 
-const contenedorProducto = document.getElementsByClassName ("seccion-main-uno");
+// const mostrarProducto = (productos) => {
+//     productos.forEach(producto => {
+//         const div = document.createElement ('div');
+//         div.classList.add('card');
+//         div.innerHTML += `
+//         <img src= ${producto.img} class="card-img-top" alt="Padel Straviv">
+//         <div class="card-body">
+//           <h5 class="card-title">${producto.nombre}</h5>
+//           <p class="card-text">${producto.precio}</p>
+//           <a href="#" class="btn btn-outline-light boton-comprar d-flex justify-content-center">${producto.boton}</a>
+//         </div>
+//         `
 
-const mostrarProducto = (productos) => {
-    productos.forEach(producto => {
-        const div = document.createElement ('div');
-        div.classList.add('card');
-        div.innerHTML += `
-        <img src= ${producto.img} class="card-img-top" alt="Padel Straviv">
-        <div class="card-body">
-          <h5 class="card-title">${producto.nombre}</h5>
-          <p class="card-text">${producto.precio}</p>
-          <a href="#" class="btn btn-outline-light boton-comprar d-flex justify-content-center">${producto.boton}</a>
-        </div>
-        `
+//         contenedorProducto.appendChild(div);
+//     });
+// }
 
-        contenedorProducto.appendChild(div);
-    });
+// mostrarProducto(productos);
+
+let miFormulario = document.getElementsByClassName("formulario");
+
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario( e ) {
+    e.preventDefault();
+
+    let formulario = e.target;
+
+    let nombre = formulario.children[0].value
+
+    let apellido = formulario.children[1].value
+
+    alert(`Bienvenido ${nombre}+ ${apellido} `);
 }
-
-mostrarProducto(productos);
-
