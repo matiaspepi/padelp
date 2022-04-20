@@ -12,6 +12,9 @@
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Dancing + Script: wght @ 700 &family = Staatliches & display = swap "rel =" stylesheet ">
     <link rel="shortcut icon" href="imagenes/logo-bis.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--metas-->
     <title>PadelP - Inico - Conoce todo sobre el Padel y sus productos</title>
     <meta name="description" content="En PadelP no solo nos dedicamos a la venta de productos de alta calidad sino tambien 
@@ -82,32 +85,19 @@
  <!--Fin Header-->
  <!--comienzo del Main-->
 <h1 class="encabezado container-fluid">Productos Destacados</h1>
- <section class="seccion-main-uno container-fluid">
-  <!-- <div data-aos="flip-left" class="card" style="background: linear-gradient( #5c5c5c, #050505);">
-    <img src="imagenes/productos/paleta1-bis.png" class="card-img-top" alt="Padel Straviv">
-    <div class="card-body">
-      <h5 class="card-title">Padel Straviv <br> TRiton Soft 21</h5>
-      <p class="card-text">61.000$</p>
-      <a href="#" class="btn btn-outline-light boton-comprar d-flex justify-content-center">Comprar</a>
+<h2 class="tienda-online">Tienda Online</h2>
+<button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+<div class="modal-contenedor">
+  <div class="modal-carrito">
+    <h3>Carrito</h3>
+    <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+    <div id="carrito-contenedor">
     </div>
-  </div> -->
-  <div data-aos="flip-left" class="card" style="background: linear-gradient( #5c5c5c, #050505);">
-    <img src="imagenes/productos/zapatilla2-bis.png" class="card-img-top" alt="Zapatilla Azul">
-    <div class="card-body">
-      <h5 class="card-title">Zapatilla Azul <br> Head Moon</h5>
-      <p class="card-text">6.900$</p>
-      <a href="#" class="btn btn-outline-light boton-comprar d-flex justify-content-center">Comprar</a>
-    </div>
+    <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
   </div>
-  </div>
-  <div data-aos="flip-left" class="card" style="background: linear-gradient( #5c5c5c, #050505);">
-    <img src="imagenes/productos/pelota1-bis.png" class="card-img-top" alt="Bull Padel">
-    <div class="card-body">
-      <h5 class="card-title">Tubo X3 <br> Bull Padel</h5>
-      <p class="card-text">2.700$</p>
-      <a href="#" class="btn btn-outline-light boton-comprar d-flex justify-content-center">Comprar</a>
-    </div>
-  </div>
+</div>
+ <section class="seccion-main-uno">
+  
 </section>
 <section class="seccion-main-dos">
   <div data-aos="flip-left" class="card" style="background: linear-gradient( #5c5c5c, #050505);">
@@ -203,6 +193,12 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
   <script>
     AOS.init();
   </script>
+  <script src="stock.js" type="module"></script>
+  <script src="App.js" type="module"></script>
+  <script src="carritoIndex.js" type="module"></script>
+  <script src="actualizarCarrito.js" type="module"></script>
+  <script src="modal.js"></script>
+  <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
   </body>
 </html>
 
